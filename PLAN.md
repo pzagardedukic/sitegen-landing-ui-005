@@ -218,6 +218,22 @@ neuspelih zahtev.
 Pregledano tudi na 390 px: glava je stekleni obroček nad fotografijo, predal z menijem je
 temen z zlato aktivno postavko, gumb v banneru ima temno besedilo na beli ploskvi.
 
+### Tretji krog (23. 9. 2026, večer)
+
+- **Wash na 24 %.** Primerjava 16 / 24 / 32 % na pasu z mnenji: pri 16 % pas ni več bral kot
+  svoj trak, kar je njegova vloga v svetli temi, pri 32 % pa je začel tekmovati s karticami,
+  ki ležijo na njem. Kontrast se ne spremeni, ker se besedilo te ploskve ne dotika
+  (12,4:1 na mint, 14,3:1 na rose).
+- **Figma usklajena s kodo**: swatcha za mint in rose nosita novi vrednosti (`#3C3A35`,
+  `#382823`), dodan je peti frame **5 — glava v obeh stanjih**, ki pokaže stekleni obroček nad
+  fotografijo in temno ploskev po pomiku, z zapisom, zakaj logotip ostane obrnjen v obeh.
+- **Vizualno pregledane preostale strani** na 1440 px: cenik, urnik, kontakt z obrazcem,
+  pogosta vprašanja in 404. Obrazec ima temno kartico s svetlimi obrobami polj, harmonika
+  tanke ločnice, 404 zlat gumb na temnem — nič ni zahtevalo popravka.
+- **Primerjava s svetlo temo**: ista sekcija cenika iz `ui-004` in `ui-005` eno ob drugem —
+  postavitev je enaka, spremeni se samo barva. Edina namerna razlika je gumb priporočenega
+  paketa, ki je vedno nasproten strani: temen v svetli temi, svetel v temni.
+
 ## Kaj ostaja
 
 - Identiteta repozitorija je **samo `uiId: "005"`** (v `sitegen-ui.json` in `package.json`),
