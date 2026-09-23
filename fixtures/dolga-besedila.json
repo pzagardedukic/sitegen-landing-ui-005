@@ -1,0 +1,12 @@
+{
+  "description": "Ime salona in naslovi sekcij so precej daljsi od demo vsebine.",
+  "patch": {
+    "home": {
+      "name": "Mirna Spa & Beauty — Salon za masaze, nego obraza in nohtov Ljubljana",
+      "slogan": {
+        "SL": "Salon za masaze, nego obraza, manikuro in pedikuro ter nego las ob Ljubljanici, z dovolj casa za vsak obisk, naravno kozmetiko in terapevtkami z mednarodnimi certifikati.",
+        "EN": "A salon for massage, facials, manicures, pedicures and hair care by the Ljubljanica, with enough time for every visit, natural skincare and internationally certified therapists."
+      }
+    }
+  }
+}

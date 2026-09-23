@@ -1,0 +1,121 @@
+{
+  "general": {
+    "primaryLanguage": "SL",
+    "supportedLanguages": ["EN"]
+  },
+  "home": {
+    "websiteName": {
+      "SL": "Mirna Spa & Beauty",
+      "EN": "Mirna Spa & Beauty"
+    },
+    "slogan": {
+      "SL": "Masaže, nega obraza in manikura ob Ljubljanici. Dovolj časa za vsak obisk, naravna kozmetika in terapevtke, ki vedo, kaj delajo.",
+      "EN": "Massage, facials and manicures by the Ljubljanica. Enough time for every visit, natural skincare, and therapists who know what they are doing."
+    },
+    "companyLogo": {
+      "text": "MIRNA"
+    }
+  },
+  "contactInfo": {
+    "company": {
+      "name": "Mirna Spa & Beauty demo d.o.o.",
+      "country": "Slovenia",
+      "address": "Trnovski pristan 14",
+      "postalCode": "1000",
+      "postalOffice": "Ljubljana"
+    },
+    "contact": [
+      {
+        "type": "PHONE",
+        "value": "+386 1 555 02 14"
+      },
+      {
+        "type": "EMAIL",
+        "value": "pozdravljeni@mirna-spa.example"
+      },
+      {
+        "type": "WEBSITE",
+        "value": "https://mirna-spa.example"
+      },
+      {
+        "type": "INSTAGRAM",
+        "value": "https://instagram.com/mirna.spa.example"
+      },
+      {
+        "type": "FACEBOOK",
+        "value": "https://facebook.com/mirna.spa.example"
+      },
+      {
+        "type": "LINKEDIN",
+        "value": "https://www.linkedin.com/company/example"
+      }
+    ]
+  },
+  "optionalSections": {
+    "team": true,
+    "experience": true,
+    "reviews": true,
+    "portfolio": true,
+    "gallery": true,
+    "clients": true,
+    "services": true,
+    "blog": true,
+    "videos": true,
+    "catalogues": true,
+    "pricing": true,
+    "careers": true,
+    "subscribe": true,
+    "faq": true,
+    "schedule": true,
+    "events": true
+  },
+  "blog": {
+    "slugs": [
+      "1-maska-iz-gline-kolikokrat-na-teden-je-dovolj",
+      "2-katero-olje-za-masazo-in-zakaj-ne-vsako",
+      "3-zakaj-se-po-masazi-pocutite-utrujeni",
+      "4-limfna-drenaza-obraza-ki-jo-zmorete-sami",
+      "5-zascita-pred-soncem-tudi-pozimi"
+    ]
+  },
+  "portfolio": {
+    "slugs": [
+      "1-ritual-globinske-nege-obraza",
+      "2-masaza-s-toplimi-kamni",
+      "3-manikura-z-masazo-rok",
+      "4-spa-pedikura",
+      "5-nega-las-in-lasisca",
+      "6-lifting-obraza-brez-igel"
+    ]
+  },
+  "pricing": {
+    "slugs": [
+      "1-paket-umiritev",
+      "2-paket-mirna",
+      "3-paket-za-dva",
+      "4-klasicna-masaza",
+      "5-masaza-s-toplimi-kamni",
+      "6-nosecniska-masaza",
+      "7-ritual-obraza",
+      "8-serija-liftinga-obraza",
+      "9-manikura-s-trajnim-lakom",
+      "10-porocni-paket"
+    ]
+  },
+  "careers": {
+    "slugs": [
+      "1-masazni-terapevt-oziroma-terapevtka",
+      "2-kozmeticarka",
+      "3-receptor-oziroma-receptorka"
+    ]
+  },
+  "events": {
+    "slugs": [
+      "1-vecer-aromaterapije",
+      "2-masaza-za-nosecnice-in-partnerje",
+      "3-manikura-doma-ki-zdrzi",
+      "4-dan-odprtih-vrat",
+      "5-priceske-za-praznike"
+    ]
+  }
+}

@@ -1,0 +1,2281 @@
+{
+  "general": {
+    "websiteType": "BOOKING",
+    "businessSector": "BEAUTY_AND_WELLNESS",
+    "primaryLanguage": "SL",
+    "supportedLanguages": ["EN"]
+  },
+  "theme": {
+    "colors": {
+      "primary": "#B48E5A",
+      "secondary": "#D9A7A0",
+      "text": "#1A1A1A"
+    },
+    "fonts": {
+      "heading": "Fraunces",
+      "body": "Figtree",
+      "banner": "Figtree"
+    },
+    "images": {
+      "banner": {
+        "id": "theme-banner-spa",
+        "file": "/images/banner-spa.webp"
+      }
+    }
+  },
+  "home": {
+    "websiteName": {
+      "SL": "Mirna Spa & Beauty",
+      "EN": "Mirna Spa & Beauty"
+    },
+    "slogan": {
+      "SL": "Masaže, nega obraza in manikura ob Ljubljanici. Dovolj časa za vsak obisk, naravna kozmetika in terapevtke, ki vedo, kaj delajo.",
+      "EN": "Massage, facials and manicures by the Ljubljanica. Enough time for every visit, natural skincare, and therapists who know what they are doing."
+    },
+    "companyLogo": {
+      "text": "MIRNA",
+      "image": null
+    }
+  },
+  "contactInfo": {
+    "company": {
+      "name": "Mirna Spa & Beauty demo d.o.o.",
+      "country": "Slovenia",
+      "address": "Trnovski pristan 14",
+      "postalCode": "1000",
+      "postalOffice": "Ljubljana"
+    },
+    "map": {
+      "enabled": true,
+      "url": "https://www.google.com/maps/place/Trnovski+pristan+14,+1000+Ljubljana",
+      "lat": "46.045120",
+      "lng": "14.501810"
+    },
+    "contact": [
+      {
+        "type": "PHONE",
+        "value": "+386 1 555 02 14"
+      },
+      {
+        "type": "EMAIL",
+        "value": "pozdravljeni@mirna-spa.example"
+      },
+      {
+        "type": "WEBSITE",
+        "value": "https://mirna-spa.example"
+      },
+      {
+        "type": "INSTAGRAM",
+        "value": "https://instagram.com/mirna.spa.example"
+      },
+      {
+        "type": "FACEBOOK",
+        "value": "https://facebook.com/mirna.spa.example"
+      },
+      {
+        "type": "LINKEDIN",
+        "value": "https://www.linkedin.com/company/example"
+      }
+    ],
+    "workingHours": {
+      "enabled": true,
+      "items": [
+        {
+          "tag": "MONDAY",
+          "open": true,
+          "from": "09:00",
+          "to": "20:00"
+        },
+        {
+          "tag": "TUESDAY",
+          "open": true,
+          "from": "09:00",
+          "to": "20:00"
+        },
+        {
+          "tag": "WEDNESDAY",
+          "open": true,
+          "from": "09:00",
+          "to": "20:00"
+        },
+        {
+          "tag": "THURSDAY",
+          "open": true,
+          "from": "09:00",
+          "to": "21:00"
+        },
+        {
+          "tag": "FRIDAY",
+          "open": true,
+          "from": "09:00",
+          "to": "19:00"
+        },
+        {
+          "tag": "SATURDAY",
+          "open": true,
+          "from": "09:00",
+          "to": "14:00"
+        },
+        {
+          "tag": "SUNDAY",
+          "open": false,
+          "from": "",
+          "to": ""
+        }
+      ],
+      "note": {
+        "SL": "Zadnji termin za masažo se začne uro in pol pred zaprtjem. Ob praznikih je salon zaprt, darilne bone pa lahko prevzamete tudi takrat po predhodnem dogovoru.",
+        "EN": "The last massage slot starts an hour and a half before closing. We are closed on public holidays, though gift vouchers can still be collected by arrangement."
+      }
+    }
+  },
+  "about": {
+    "aboutType": "ABOUT_COMPANY",
+    "sectionName": {
+      "SL": "O salonu",
+      "EN": "About the salon"
+    },
+    "text": {
+      "SL": "Mirna je salon s štirimi sobami za masažo in nego obraza ter kotičkom za manikuro. Termine razporejamo z dvajsetminutnim razmikom, zato nihče ne čaka v čakalnici in nobena obravnava se ne konča prehitro. Uporabljamo naravno kozmetiko slovenskih in evropskih proizvajalcev.",
+      "EN": "Mirna is a salon with four rooms for massage and facials and a corner for manicures. Appointments are spaced twenty minutes apart, so nobody waits in the lobby and no treatment is rushed to the end. We use natural skincare from Slovenian and European makers."
+    },
+    "establishedYear": 2015,
+    "items": [
+      {
+        "text": {
+          "SL": "Vsak obisk se začne s kratkim pogovorom: kaj vas teži, kaj koži ustreza in česa ne želite. Na podlagi tega terapevtka izbere olja, pritisk in trajanje.",
+          "EN": "Every visit starts with a short conversation: what is bothering you, what suits your skin and what you would rather avoid. Your therapist then chooses the oils, pressure and length."
+        },
+        "image": {
+          "id": "about-ritual",
+          "file": "/images/onas-ritual.webp"
+        }
+      },
+      {
+        "text": {
+          "SL": "Sobe so zvočno ločene, ogrevane mize pa pripravimo pred vašim prihodom. Brisače in ogrinjala peremo sami, brez odišavljenih mehčalcev.",
+          "EN": "The rooms are soundproofed and the tables are warmed before you arrive. We launder the towels and robes ourselves, without scented softeners."
+        },
+        "image": {
+          "id": "about-room",
+          "file": "/images/onas-prostor.webp"
+        }
+      },
+      {
+        "text": {
+          "SL": "Po obravnavi ostanete v sobi za sprostitev, kolikor želite. Čaj iz domačih zelišč in kozarec vode sta vedno pripravljena.",
+          "EN": "After your treatment you can stay in the relaxation room for as long as you like. Herbal tea and a glass of water are always ready."
+        },
+        "image": {
+          "id": "about-welcome",
+          "file": "/images/onas-sprejem.webp"
+        }
+      }
+    ]
+  },
+  "legal": {
+    "privacyPolicy": {
+      "SL": {
+        "id": "privacy-sl",
+        "file": "/documents/zasebnost-sl.pdf"
+      },
+      "EN": {
+        "id": "privacy-en",
+        "file": "/documents/privacy-en.pdf"
+      }
+    },
+    "termsOfService": {
+      "SL": {
+        "id": "terms-sl",
+        "file": "/documents/pogoji-sl.pdf"
+      },
+      "EN": {
+        "id": "terms-en",
+        "file": "/documents/terms-en.pdf"
+      }
+    }
+  },
+  "team": {
+    "text": {
+      "SL": "Terapevtke imajo mednarodne certifikate in se vsako leto dodatno izobražujejo. Pri nas vas vedno obravnava ista oseba, če si to želite.",
+      "EN": "Our therapists hold international certificates and train further every year. If you wish, the same person looks after you on every visit."
+    },
+    "items": [
+      {
+        "name": {
+          "SL": "Nika Horvat",
+          "EN": "Nika Horvat"
+        },
+        "text": {
+          "SL": "Ustanoviteljica salona in kozmetičarka. Certifikat CIDESCO, dvanajst let dela z občutljivo in aknasto kožo.",
+          "EN": "Founder of the salon and a beauty therapist. CIDESCO certified, with twelve years of work with sensitive and acne-prone skin."
+        },
+        "contact": [
+          {
+            "type": "EMAIL",
+            "value": "nika@mirna-spa.example"
+          },
+          {
+            "type": "INSTAGRAM",
+            "value": "https://www.instagram.com/example"
+          },
+          {
+            "type": "LINKEDIN",
+            "value": "https://www.linkedin.com/in/example"
+          }
+        ],
+        "image": {
+          "id": "team-nika",
+          "file": "/images/ekipa-nika.webp"
+        }
+      },
+      {
+        "name": {
+          "SL": "Eva Kranjc",
+          "EN": "Eva Kranjc"
+        },
+        "text": {
+          "SL": "Masažna terapevtka. Klasična, športna in limfna masaža ter masaža s toplimi kamni; posebej rada dela z nosečnicami.",
+          "EN": "Massage therapist. Classic, sports and lymphatic massage and hot stone work; she especially enjoys working with expectant mothers."
+        },
+        "contact": [
+          {
+            "type": "EMAIL",
+            "value": "eva@mirna-spa.example"
+          },
+          {
+            "type": "PHONE",
+            "value": "+386 1 555 02 15"
+          }
+        ],
+        "image": {
+          "id": "team-eva",
+          "file": "/images/ekipa-eva.webp"
+        }
+      },
+      {
+        "name": {
+          "SL": "Tina Zorko",
+          "EN": "Tina Zorko"
+        },
+        "text": {
+          "SL": "Manikura in pedikura. Gel, trajni lak in medicinska pedikura; skrbi tudi za higienski protokol v vseh sobah.",
+          "EN": "Manicure and pedicure. Gel, long-lasting polish and medical pedicure; she also runs the hygiene protocol in every room."
+        },
+        "contact": [
+          {
+            "type": "EMAIL",
+            "value": "tina@mirna-spa.example"
+          },
+          {
+            "type": "INSTAGRAM",
+            "value": "https://www.instagram.com/example"
+          }
+        ],
+        "image": {
+          "id": "team-tina",
+          "file": "/images/ekipa-tina.webp"
+        }
+      },
+      {
+        "name": {
+          "SL": "Lara Novak",
+          "EN": "Lara Novak"
+        },
+        "text": {
+          "SL": "Nega las in lasišča ter ličenje za posebne priložnosti. Pripravi tudi poročne pakete s poskusnim ličenjem.",
+          "EN": "Hair and scalp care, and make-up for special occasions. She also puts together bridal packages with a trial session."
+        },
+        "contact": [
+          {
+            "type": "EMAIL",
+            "value": "lara@mirna-spa.example"
+          },
+          {
+            "type": "PHONE",
+            "value": "+386 1 555 02 16"
+          }
+        ],
+        "image": {
+          "id": "team-lara",
+          "file": "/images/ekipa-lara.webp"
+        }
+      }
+    ]
+  },
+  "experience": {
+    "text": {
+      "SL": "V desetih letih smo iz ene sobe zrasli v salon s štirimi sobami, kotičkom za nohte in stalnimi strankami, ki prihajajo tudi iz drugih mest.",
+      "EN": "In ten years we have grown from a single room into a salon with four rooms, a nail corner and regulars who travel in from other towns."
+    },
+    "clientCount": 2400,
+    "projectCount": 38,
+    "items": [
+      {
+        "url": "https://example.com/certifications/cidesco",
+        "image": {
+          "id": "certificate-cidesco",
+          "file": "https://placehold.co/720x360/FFFFFF/1A1A1A?text=CIDESCO"
+        }
+      },
+      {
+        "url": "https://example.com/certifications/itec",
+        "image": {
+          "id": "certificate-itec",
+          "file": "https://placehold.co/720x360/FFFFFF/1A1A1A?text=ITEC"
+        }
+      },
+      {
+        "url": "https://example.com/certifications/natrue",
+        "image": {
+          "id": "certificate-natrue",
+          "file": "https://placehold.co/720x360/FFFFFF/1A1A1A?text=NATRUE"
+        }
+      }
+    ]
+  },
+  "reviews": {
+    "text": {
+      "SL": "Stranke najpogosteje omenjajo dvoje: da imajo dovolj časa in da jih terapevtka res posluša, preden začne.",
+      "EN": "Clients mention two things most often: that they have enough time, and that the therapist really listens before she starts."
+    },
+    "items": [
+      {
+        "title": {
+          "SL": "Ana K.",
+          "EN": "Ana K."
+        },
+        "text": {
+          "SL": "Eva je najprej vprašala, kje me boli in kako spim, šele potem je izbrala olje. Po uri in pol sem odšla lahka, tisto noč pa sem prvič po mesecih prespala brez prebujanja.",
+          "EN": "Eva first asked where it hurt and how I sleep, and only then chose an oil. I left feeling light after ninety minutes, and that night I slept through for the first time in months."
+        },
+        "url": "https://example.com/reviews/1",
+        "image": {
+          "id": "review-1",
+          "file": "/images/mnenje-01.webp"
+        }
+      },
+      {
+        "title": {
+          "SL": "Katja M.",
+          "EN": "Katja M."
+        },
+        "text": {
+          "SL": "Leta sem menjavala kreme brez učinka. Nika mi je sestavila preprosto rutino treh izdelkov in me po šestih tednih povabila na pregled. Rdečica je skoraj izginila.",
+          "EN": "For years I switched creams with no effect. Nika put together a simple three-product routine and invited me back after six weeks. The redness has almost gone."
+        },
+        "url": "https://example.com/reviews/2",
+        "image": {
+          "id": "review-2",
+          "file": "/images/mnenje-02.webp"
+        }
+      },
+      {
+        "title": {
+          "SL": "Urška P.",
+          "EN": "Urška P."
+        },
+        "text": {
+          "SL": "Tina dela natančno in brez hitenja. Trajni lak mi zdrži tri tedne, obnohtna koža pa je po njeni pedikuri prvič res urejena.",
+          "EN": "Tina is precise and never in a hurry. Her long-lasting polish holds for three weeks, and after her pedicure my cuticles finally look cared for."
+        },
+        "url": "https://example.com/reviews/3",
+        "image": {
+          "id": "review-3",
+          "file": "/images/mnenje-03.webp"
+        }
+      },
+      {
+        "title": {
+          "SL": "Mojca R.",
+          "EN": "Mojca R."
+        },
+        "text": {
+          "SL": "Mami sem kupila darilni bon za ritual obraza. Poklicala me je iz sobe za sprostitev in rekla, da je to najlepše darilo v zadnjih letih.",
+          "EN": "I bought my mother a gift voucher for a facial ritual. She called me from the relaxation room to say it was the nicest present she had had in years."
+        },
+        "url": "https://example.com/reviews/4",
+        "image": {
+          "id": "review-4",
+          "file": "/images/mnenje-04.webp"
+        }
+      }
+    ]
+  },
+  "portfolio": {
+    "sectionName": {
+      "SL": "Rituali",
+      "EN": "Rituals"
+    },
+    "text": {
+      "SL": "Rituali so daljše obravnave, ki združujejo več postopkov v en obisk. Vsak ima svoj namen in trajanje; spodaj je pregled tistih, ki jih izvajamo vse leto.",
+      "EN": "Rituals are longer treatments that combine several steps into a single visit. Each has its own purpose and length; below are the ones we offer all year."
+    },
+    "categories": [
+      {
+        "id": "ritual-face",
+        "name": {
+          "SL": "Obraz",
+          "EN": "Face"
+        }
+      },
+      {
+        "id": "ritual-body",
+        "name": {
+          "SL": "Telo",
+          "EN": "Body"
+        }
+      },
+      {
+        "id": "ritual-hands",
+        "name": {
+          "SL": "Roke in noge",
+          "EN": "Hands and feet"
+        }
+      },
+      {
+        "id": "ritual-hair",
+        "name": {
+          "SL": "Lasje",
+          "EN": "Hair"
+        }
+      }
+    ],
+    "items": [
+      {
+        "title": {
+          "SL": "Ritual globinske nege obraza",
+          "EN": "Deep facial ritual"
+        },
+        "text": {
+          "SL": "Čiščenje, piling z encimi, maska iz zelene gline in masaža obraza, vratu in dekolteja. Primeren za mešano in utrujeno kožo, rezultat je viden takoj.",
+          "EN": "Cleansing, an enzyme peel, a green clay mask and a massage of the face, neck and décolleté. Suited to combination and tired skin, with results you can see straight away."
+        },
+        "client": {
+          "SL": "Nevesta, teden pred poroko",
+          "EN": "A bride, a week before her wedding"
+        },
+        "date": "2026-04-18",
+        "categoryId": "ritual-face",
+        "images": [
+          {
+            "id": "ritual-face-1",
+            "file": "/images/ritual-obraz.webp"
+          },
+          {
+            "id": "ritual-face-2",
+            "file": "/images/blog-maska.webp"
+          },
+          {
+            "id": "ritual-face-3",
+            "file": "/images/galerija-12.webp"
+          }
+        ]
+      },
+      {
+        "title": {
+          "SL": "Masaža s toplimi kamni",
+          "EN": "Hot stone massage"
+        },
+        "text": {
+          "SL": "Bazaltni kamni, segreti na 50 stopinj, sprostijo globoke mišice hitreje kot roke same. Masaža celega telesa z mandljevim oljem in eteričnim oljem sivke.",
+          "EN": "Basalt stones warmed to 50 degrees release deep muscles faster than hands alone. A full-body massage with almond oil and lavender essential oil."
+        },
+        "client": {
+          "SL": "Tekačica po prvem maratonu",
+          "EN": "A runner after her first marathon"
+        },
+        "date": "2025-11-07",
+        "categoryId": "ritual-body",
+        "images": [
+          {
+            "id": "ritual-stone-1",
+            "file": "/images/ritual-kamni.webp"
+          },
+          {
+            "id": "ritual-stone-2",
+            "file": "/images/galerija-03.webp"
+          },
+          {
+            "id": "ritual-stone-3",
+            "file": "/images/storitev-masaze.webp"
+          }
+        ]
+      },
+      {
+        "title": {
+          "SL": "Manikura z masažo rok",
+          "EN": "Manicure with hand massage"
+        },
+        "text": {
+          "SL": "Oblikovanje nohtov, nega obnohtne kože, parafinska kopel in trajni lak v odtenku po izbiri. Konča se z desetminutno masažo rok.",
+          "EN": "Shaping, cuticle care, a paraffin bath and long-lasting polish in the shade of your choice. It ends with a ten-minute hand massage."
+        },
+        "client": {
+          "SL": "Pianistka pred koncertom",
+          "EN": "A pianist before a concert"
+        },
+        "date": "2025-05-23",
+        "categoryId": "ritual-hands",
+        "images": [
+          {
+            "id": "ritual-manicure-1",
+            "file": "/images/ritual-manikura.webp"
+          },
+          {
+            "id": "ritual-manicure-2",
+            "file": "/images/galerija-05.webp"
+          },
+          {
+            "id": "ritual-manicure-3",
+            "file": "/images/storitev-nohti.webp"
+          }
+        ]
+      },
+      {
+        "title": {
+          "SL": "Spa pedikura",
+          "EN": "Spa pedicure"
+        },
+        "text": {
+          "SL": "Kopel s cvetovi in soljo, odstranjevanje trde kože, nega nohtov in masaža stopal do kolen. Po želji s trajnim lakom.",
+          "EN": "A soak with flowers and salt, hard-skin removal, nail care and a massage from the feet to the knees. Long-lasting polish if you wish."
+        },
+        "client": {
+          "SL": "Natakarica po poletni sezoni",
+          "EN": "A waitress after the summer season"
+        },
+        "date": "2024-10-12",
+        "categoryId": "ritual-hands",
+        "images": [
+          {
+            "id": "ritual-pedicure-1",
+            "file": "/images/ritual-pedikura.webp"
+          },
+          {
+            "id": "ritual-pedicure-2",
+            "file": "/images/galerija-11.webp"
+          },
+          {
+            "id": "ritual-pedicure-3",
+            "file": "/images/galerija-08.webp"
+          }
+        ]
+      },
+      {
+        "title": {
+          "SL": "Nega las in lasišča",
+          "EN": "Hair and scalp care"
+        },
+        "text": {
+          "SL": "Diagnostika lasišča, globinsko pranje, maska po meri in masaža glave. Primerna za suho lasišče, izpadanje las in po barvanju.",
+          "EN": "A scalp assessment, a deep cleanse, a tailored mask and a head massage. Good for a dry scalp, hair loss and after colouring."
+        },
+        "client": {
+          "SL": "Plavalka po sezoni v bazenu",
+          "EN": "A swimmer after a season in the pool"
+        },
+        "date": "2026-02-14",
+        "categoryId": "ritual-hair",
+        "images": [
+          {
+            "id": "ritual-hair-1",
+            "file": "/images/ritual-lasje.webp"
+          },
+          {
+            "id": "ritual-hair-2",
+            "file": "/images/galerija-07.webp"
+          },
+          {
+            "id": "ritual-hair-3",
+            "file": "/images/dogodek-lasje.webp"
+          }
+        ]
+      },
+      {
+        "title": {
+          "SL": "Lifting obraza brez igel",
+          "EN": "Needle-free facial lift"
+        },
+        "text": {
+          "SL": "Mikrotokovi in ročna limfna drenaža napnejo obrazne mišice in zmanjšajo zabuhlost. Priporočamo serijo šestih obiskov v razmiku enega tedna.",
+          "EN": "Microcurrent and manual lymphatic drainage tone the facial muscles and reduce puffiness. We recommend a series of six visits a week apart."
+        },
+        "client": {
+          "SL": "Stranka pred 50. rojstnim dnem",
+          "EN": "A client before her 50th birthday"
+        },
+        "date": "2024-06-28",
+        "categoryId": "ritual-face",
+        "images": [
+          {
+            "id": "ritual-lift-1",
+            "file": "/images/ritual-estetika.webp"
+          },
+          {
+            "id": "ritual-lift-2",
+            "file": "/images/storitev-obraz.webp"
+          },
+          {
+            "id": "ritual-lift-3",
+            "file": "/images/galerija-01.webp"
+          }
+        ]
+      }
+    ]
+  },
+  "gallery": {
+    "items": [
+      {
+        "id": "gallery-01",
+        "file": "/images/galerija-01.webp"
+      },
+      {
+        "id": "gallery-02",
+        "file": "/images/galerija-02.webp"
+      },
+      {
+        "id": "gallery-03",
+        "file": "/images/galerija-03.webp"
+      },
+      {
+        "id": "gallery-04",
+        "file": "/images/galerija-04.webp"
+      },
+      {
+        "id": "gallery-05",
+        "file": "/images/galerija-05.webp"
+      },
+      {
+        "id": "gallery-06",
+        "file": "/images/galerija-06.webp"
+      },
+      {
+        "id": "gallery-07",
+        "file": "/images/galerija-07.webp"
+      },
+      {
+        "id": "gallery-08",
+        "file": "/images/galerija-08.webp"
+      },
+      {
+        "id": "gallery-09",
+        "file": "/images/galerija-09.webp"
+      },
+      {
+        "id": "gallery-10",
+        "file": "/images/galerija-10.webp"
+      },
+      {
+        "id": "gallery-11",
+        "file": "/images/galerija-11.webp"
+      },
+      {
+        "id": "gallery-12",
+        "file": "/images/galerija-12.webp"
+      }
+    ]
+  },
+  "clients": {
+    "items": [
+      {
+        "image": {
+          "id": "client-goodness",
+          "file": "/images/clients/goodness.webp"
+        },
+        "url": "https://example.com/partners/goodness"
+      },
+      {
+        "image": {
+          "id": "client-mor",
+          "file": "/images/clients/mor.webp"
+        },
+        "url": "https://example.com/partners/mor"
+      },
+      {
+        "image": {
+          "id": "client-sometimes",
+          "file": "/images/clients/sometimes.webp"
+        },
+        "url": "https://example.com/partners/sometimes"
+      },
+      {
+        "image": {
+          "id": "client-lowaura",
+          "file": "/images/clients/lowaura.webp"
+        },
+        "url": "https://example.com/partners/lowaura"
+      },
+      {
+        "image": {
+          "id": "client-libreri",
+          "file": "/images/clients/libreri.webp"
+        },
+        "url": "https://example.com/partners/libreri"
+      },
+      {
+        "image": {
+          "id": "client-alibu",
+          "file": "/images/clients/alibu.webp"
+        },
+        "url": "https://example.com/partners/alibu"
+      },
+      {
+        "image": {
+          "id": "client-blanca",
+          "file": "/images/clients/blanca.webp"
+        },
+        "url": "https://example.com/partners/blanca"
+      }
+    ]
+  },
+  "services": {
+    "text": {
+      "SL": "Tri vrste obiska, od masaže do urejenih nohtov. Trajanje in ceno povemo vnaprej, dodatnih stroškov na koncu ni.",
+      "EN": "Three kinds of visit, from a massage to well-kept nails. Length and price are agreed up front, with no extras added at the end."
+    },
+    "items": [
+      {
+        "title": {
+          "SL": "Masaže",
+          "EN": "Massage"
+        },
+        "text": {
+          "SL": "Klasična, sproščujoča, športna in limfna masaža ter masaža s toplimi kamni, od 30 do 90 minut.",
+          "EN": "Classic, relaxing, sports and lymphatic massage, and hot stones, from 30 to 90 minutes."
+        },
+        "features": [
+          {
+            "SL": "Ogrevana masažna miza",
+            "EN": "A warmed massage table"
+          },
+          {
+            "SL": "Olja po izbiri",
+            "EN": "Oils of your choice"
+          },
+          {
+            "SL": "Prilagojen pritisk",
+            "EN": "Pressure adjusted to you"
+          },
+          {
+            "SL": "Soba za sprostitev po obravnavi",
+            "EN": "Relaxation room afterwards"
+          }
+        ],
+        "image": {
+          "id": "service-massage",
+          "file": "/images/storitev-masaze.webp"
+        }
+      },
+      {
+        "title": {
+          "SL": "Nega obraza",
+          "EN": "Facials"
+        },
+        "text": {
+          "SL": "Čiščenje, vlaženje in pomlajevanje z naravno kozmetiko, prilagojeno vašemu tipu kože.",
+          "EN": "Cleansing, hydration and rejuvenation with natural skincare suited to your skin type."
+        },
+        "features": [
+          {
+            "SL": "Analiza kože pred obravnavo",
+            "EN": "Skin analysis before the treatment"
+          },
+          {
+            "SL": "Naravna, veganska kozmetika",
+            "EN": "Natural, vegan skincare"
+          },
+          {
+            "SL": "Masaža obraza in dekolteja",
+            "EN": "Face and décolleté massage"
+          },
+          {
+            "SL": "Pisna rutina za dom",
+            "EN": "A written routine for home"
+          }
+        ],
+        "image": {
+          "id": "service-facial",
+          "file": "/images/storitev-obraz.webp"
+        }
+      },
+      {
+        "title": {
+          "SL": "Manikura in pedikura",
+          "EN": "Manicure and pedicure"
+        },
+        "text": {
+          "SL": "Klasična in spa manikura, gel, trajni lak ter medicinska pedikura v ločenem kotičku.",
+          "EN": "Classic and spa manicures, gel, long-lasting polish and medical pedicures in a separate corner."
+        },
+        "features": [
+          {
+            "SL": "Steriliziran pribor za vsako stranko",
+            "EN": "Sterilised tools for every client"
+          },
+          {
+            "SL": "Več kot 120 odtenkov laka",
+            "EN": "More than 120 polish shades"
+          },
+          {
+            "SL": "Parafinska kopel",
+            "EN": "Paraffin bath"
+          },
+          {
+            "SL": "Brezplačen popravek v 5 dneh",
+            "EN": "Free touch-up within 5 days"
+          }
+        ],
+        "image": {
+          "id": "service-nails",
+          "file": "/images/storitev-nohti.webp"
+        }
+      }
+    ]
+  },
+  "blog": {
+    "text": {
+      "SL": "Kratki zapisi o negi kože, sprostitvi in tem, kaj res pomaga — brez čudežnih obljub.",
+      "EN": "Short pieces on skincare, relaxation and what actually helps — without miracle promises."
+    },
+    "items": [
+      {
+        "title": {
+          "SL": "Maska iz gline: kolikokrat na teden je dovolj",
+          "EN": "Clay masks: how often is enough"
+        },
+        "description": {
+          "SL": "Glina lepo očisti, a pri prepogosti uporabi izsuši kožo. Kako izbrati pravo vrsto in kdaj jo raje izpustiti.",
+          "EN": "Clay cleanses beautifully but dries the skin out if overused. How to choose the right kind, and when to skip it."
+        },
+        "author": "Nika Horvat",
+        "date": "2026-07-22",
+        "image": {
+          "id": "blog-mask",
+          "file": "/images/blog-maska.webp"
+        }
+      },
+      {
+        "title": {
+          "SL": "Katero olje za masažo in zakaj ne vsako",
+          "EN": "Which massage oil, and why not just any"
+        },
+        "description": {
+          "SL": "Mandljevo, jojobovo ali kokosovo? Razlike v vpijanju, vonju in tem, kaj ustreza občutljivi koži.",
+          "EN": "Almond, jojoba or coconut? The differences in absorption and scent, and what suits sensitive skin."
+        },
+        "author": "Eva Kranjc",
+        "date": "2026-06-11",
+        "image": {
+          "id": "blog-oil",
+          "file": "/images/blog-olje.webp"
+        }
+      },
+      {
+        "title": {
+          "SL": "Zakaj se po masaži počutite utrujeni",
+          "EN": "Why you feel tired after a massage"
+        },
+        "description": {
+          "SL": "Zaspanost po masaži ni slab znak. Kaj se dogaja v telesu in kako preživeti preostanek dneva.",
+          "EN": "Feeling sleepy after a massage is not a bad sign. What happens in the body and how to spend the rest of the day."
+        },
+        "author": "Eva Kranjc",
+        "date": "2026-04-30",
+        "image": {
+          "id": "blog-rest",
+          "file": "/images/blog-sprostitev.webp"
+        }
+      },
+      {
+        "title": {
+          "SL": "Limfna drenaža obraza, ki jo zmorete sami",
+          "EN": "Facial lymphatic drainage you can do yourself"
+        },
+        "description": {
+          "SL": "Pet gibov za jutra, ko je obraz zabuhel. Brez pripomočkov, v treh minutah pred ogledalom.",
+          "EN": "Five movements for mornings when your face is puffy. No tools, three minutes in front of the mirror."
+        },
+        "author": "Nika Horvat",
+        "date": "2026-03-19",
+        "image": {
+          "id": "blog-drainage",
+          "file": "/images/blog-drenaza.webp"
+        }
+      },
+      {
+        "title": {
+          "SL": "Zaščita pred soncem tudi pozimi",
+          "EN": "Sun protection in winter too"
+        },
+        "description": {
+          "SL": "UVA žarki prehajajo skozi oblake in okna vse leto. Kakšen faktor izbrati za mesto in kakšnega za smučišče.",
+          "EN": "UVA rays pass through clouds and windows all year. Which factor to choose for the city and which for the slopes."
+        },
+        "author": "Nika Horvat",
+        "date": "2026-02-05",
+        "image": {
+          "id": "blog-sun",
+          "file": "/images/blog-sonce.webp"
+        }
+      }
+    ]
+  },
+  "videos": {
+    "items": [
+      "https://www.youtube.com/watch?v=_Cby0ZaziJs",
+      "https://www.youtube.com/watch?v=QSVQ9-6G6BY",
+      "https://www.youtube.com/watch?v=tKB8pyoEbl0",
+      "https://www.youtube.com/watch?v=nkLoUBHe8EI"
+    ]
+  },
+  "catalogues": {
+    "items": [
+      {
+        "displayName": "Mirna — cenik storitev 2026 (SL/EN)",
+        "size": 35694,
+        "file": {
+          "id": "catalogue-prices-2026",
+          "file": "/documents/mirna-cenik-2026.pdf"
+        }
+      },
+      {
+        "displayName": "Darilni boni in paketi (SL)",
+        "size": 31021,
+        "file": {
+          "id": "catalogue-vouchers",
+          "file": "/documents/mirna-darilni-boni.pdf"
+        }
+      },
+      {
+        "displayName": "Vodnik za nego kože doma (SL/EN)",
+        "size": 27937,
+        "file": {
+          "id": "catalogue-skincare-guide",
+          "file": "/documents/mirna-nega-koze-vodnik.pdf"
+        }
+      }
+    ]
+  },
+  "pricing": {
+    "type": "PRICING_PACKAGES",
+    "sectionName": {
+      "SL": "Paketi in cene",
+      "EN": "Packages and prices"
+    },
+    "text": {
+      "SL": "Paketi združujejo obravnave, ki se dopolnjujejo, po nižji ceni kot posamezni obiski. Vse pakete lahko podarite kot darilni bon z veljavnostjo šest mesecev.",
+      "EN": "Packages combine treatments that complement each other, at a lower price than single visits. Every package can be given as a gift voucher valid for six months."
+    },
+    "categories": [
+      {
+        "id": "price-packages",
+        "name": {
+          "SL": "Paketi",
+          "EN": "Packages"
+        }
+      },
+      {
+        "id": "price-massage",
+        "name": {
+          "SL": "Masaže",
+          "EN": "Massage"
+        }
+      },
+      {
+        "id": "price-face",
+        "name": {
+          "SL": "Obraz",
+          "EN": "Face"
+        }
+      },
+      {
+        "id": "price-nails",
+        "name": {
+          "SL": "Nohti",
+          "EN": "Nails"
+        }
+      }
+    ],
+    "items": [
+      {
+        "title": {
+          "SL": "Paket Umiritev",
+          "EN": "Unwind package"
+        },
+        "text": {
+          "SL": "Sproščujoča masaža in kratka nega obraza.",
+          "EN": "A relaxing massage and a short facial."
+        },
+        "categoryId": "price-packages",
+        "price": {
+          "onAgreement": false,
+          "value": "89.00",
+          "currency": "EUR",
+          "unit": "ITEM",
+          "tax": 22
+        },
+        "images": [
+          {
+            "id": "price-1-1",
+            "file": "/images/onas-ritual.webp"
+          },
+          {
+            "id": "price-1-2",
+            "file": "/images/storitev-masaze.webp"
+          }
+        ],
+        "features": [
+          {
+            "label": {
+              "SL": "Masaža",
+              "EN": "Massage"
+            },
+            "value": {
+              "SL": "50 minut",
+              "EN": "50 minutes"
+            }
+          },
+          {
+            "label": {
+              "SL": "Nega obraza",
+              "EN": "Facial"
+            },
+            "value": {
+              "SL": "30 minut",
+              "EN": "30 minutes"
+            }
+          },
+          {
+            "label": {
+              "SL": "Soba za sprostitev",
+              "EN": "Relaxation room"
+            },
+            "value": {
+              "SL": "Vključena",
+              "EN": "Included"
+            }
+          }
+        ],
+        "recommended": false,
+        "status": "AVAILABLE"
+      },
+      {
+        "title": {
+          "SL": "Paket Mirna",
+          "EN": "Mirna package"
+        },
+        "text": {
+          "SL": "Najbolj priljubljen: masaža s kamni, ritual obraza in manikura.",
+          "EN": "Our favourite: hot stones, a facial ritual and a manicure."
+        },
+        "categoryId": "price-packages",
+        "price": {
+          "onAgreement": false,
+          "value": "189.00",
+          "discountedValue": "169.00",
+          "currency": "EUR",
+          "unit": "ITEM",
+          "tax": 22
+        },
+        "images": [
+          {
+            "id": "price-2-1",
+            "file": "/images/ritual-kamni.webp"
+          },
+          {
+            "id": "price-2-2",
+            "file": "/images/ritual-obraz.webp"
+          }
+        ],
+        "features": [
+          {
+            "label": {
+              "SL": "Masaža s kamni",
+              "EN": "Hot stones"
+            },
+            "value": {
+              "SL": "75 minut",
+              "EN": "75 minutes"
+            }
+          },
+          {
+            "label": {
+              "SL": "Ritual obraza",
+              "EN": "Facial ritual"
+            },
+            "value": {
+              "SL": "60 minut",
+              "EN": "60 minutes"
+            }
+          },
+          {
+            "label": {
+              "SL": "Manikura",
+              "EN": "Manicure"
+            },
+            "value": {
+              "SL": "Z lakom",
+              "EN": "With polish"
+            }
+          }
+        ],
+        "recommended": true,
+        "status": "AVAILABLE"
+      },
+      {
+        "title": {
+          "SL": "Paket Za dva",
+          "EN": "Package for two"
+        },
+        "text": {
+          "SL": "Masaža v paru v isti sobi in penina ob koncu.",
+          "EN": "A couples massage in the same room, with sparkling wine to finish."
+        },
+        "categoryId": "price-packages",
+        "price": {
+          "onAgreement": false,
+          "value": "159.00",
+          "currency": "EUR",
+          "unit": "ITEM",
+          "tax": 22
+        },
+        "images": [
+          {
+            "id": "price-3-1",
+            "file": "/images/onas-prostor.webp"
+          },
+          {
+            "id": "price-3-2",
+            "file": "/images/storitev-masaze.webp"
+          }
+        ],
+        "features": [
+          {
+            "label": {
+              "SL": "Osebi",
+              "EN": "People"
+            },
+            "value": {
+              "SL": "2",
+              "EN": "2"
+            }
+          },
+          {
+            "label": {
+              "SL": "Masaža",
+              "EN": "Massage"
+            },
+            "value": {
+              "SL": "60 minut",
+              "EN": "60 minutes"
+            }
+          },
+          {
+            "label": {
+              "SL": "Termin",
+              "EN": "Slot"
+            },
+            "value": {
+              "SL": "Tudi v četrtek zvečer",
+              "EN": "Thursday evenings too"
+            }
+          }
+        ],
+        "recommended": false,
+        "status": "AVAILABLE"
+      },
+      {
+        "title": {
+          "SL": "Klasična masaža",
+          "EN": "Classic massage"
+        },
+        "text": {
+          "SL": "Masaža hrbta, vratu in ramen.",
+          "EN": "Back, neck and shoulder massage."
+        },
+        "categoryId": "price-massage",
+        "price": {
+          "onAgreement": false,
+          "value": "42.00",
+          "currency": "EUR",
+          "unit": "ITEM",
+          "tax": 22
+        },
+        "images": [
+          {
+            "id": "price-4-1",
+            "file": "/images/storitev-masaze.webp"
+          },
+          {
+            "id": "price-4-2",
+            "file": "/images/onas-ritual.webp"
+          }
+        ],
+        "features": [
+          {
+            "label": {
+              "SL": "Trajanje",
+              "EN": "Length"
+            },
+            "value": {
+              "SL": "40 minut",
+              "EN": "40 minutes"
+            }
+          },
+          {
+            "label": {
+              "SL": "Olje",
+              "EN": "Oil"
+            },
+            "value": {
+              "SL": "Po izbiri",
+              "EN": "Your choice"
+            }
+          },
+          {
+            "label": {
+              "SL": "Rezervacija",
+              "EN": "Booking"
+            },
+            "value": {
+              "SL": "Isti dan",
+              "EN": "Same day"
+            }
+          }
+        ],
+        "recommended": false,
+        "status": "AVAILABLE"
+      },
+      {
+        "title": {
+          "SL": "Masaža s toplimi kamni",
+          "EN": "Hot stone massage"
+        },
+        "text": {
+          "SL": "Masaža celega telesa z bazaltnimi kamni.",
+          "EN": "Full-body massage with basalt stones."
+        },
+        "categoryId": "price-massage",
+        "price": {
+          "onAgreement": false,
+          "value": "79.00",
+          "currency": "EUR",
+          "unit": "ITEM",
+          "tax": 22
+        },
+        "images": [
+          {
+            "id": "price-5-1",
+            "file": "/images/ritual-kamni.webp"
+          },
+          {
+            "id": "price-5-2",
+            "file": "/images/onas-prostor.webp"
+          }
+        ],
+        "features": [
+          {
+            "label": {
+              "SL": "Trajanje",
+              "EN": "Length"
+            },
+            "value": {
+              "SL": "75 minut",
+              "EN": "75 minutes"
+            }
+          },
+          {
+            "label": {
+              "SL": "Kamni",
+              "EN": "Stones"
+            },
+            "value": {
+              "SL": "Bazalt, 50 °C",
+              "EN": "Basalt, 50 °C"
+            }
+          },
+          {
+            "label": {
+              "SL": "Primerno",
+              "EN": "Suitable"
+            },
+            "value": {
+              "SL": "Ne v nosečnosti",
+              "EN": "Not in pregnancy"
+            }
+          }
+        ],
+        "recommended": false,
+        "status": "AVAILABLE"
+      },
+      {
+        "title": {
+          "SL": "Nosečniška masaža",
+          "EN": "Pregnancy massage"
+        },
+        "text": {
+          "SL": "Masaža v bočnem položaju, od 14. tedna nosečnosti.",
+          "EN": "Side-lying massage from the 14th week of pregnancy."
+        },
+        "categoryId": "price-massage",
+        "price": {
+          "onAgreement": false,
+          "value": "58.00",
+          "currency": "EUR",
+          "unit": "ITEM",
+          "tax": 22
+        },
+        "images": [
+          {
+            "id": "price-6-1",
+            "file": "/images/dogodek-nosecnice.webp"
+          },
+          {
+            "id": "price-6-2",
+            "file": "/images/storitev-masaze.webp"
+          }
+        ],
+        "features": [
+          {
+            "label": {
+              "SL": "Trajanje",
+              "EN": "Length"
+            },
+            "value": {
+              "SL": "50 minut",
+              "EN": "50 minutes"
+            }
+          },
+          {
+            "label": {
+              "SL": "Položaj",
+              "EN": "Position"
+            },
+            "value": {
+              "SL": "Bočni, z blazinami",
+              "EN": "Side-lying, with cushions"
+            }
+          },
+          {
+            "label": {
+              "SL": "Terapevtka",
+              "EN": "Therapist"
+            },
+            "value": {
+              "SL": "Eva",
+              "EN": "Eva"
+            }
+          }
+        ],
+        "recommended": false,
+        "status": "AVAILABLE"
+      },
+      {
+        "title": {
+          "SL": "Ritual obraza",
+          "EN": "Facial ritual"
+        },
+        "text": {
+          "SL": "Čiščenje, piling, maska in masaža obraza.",
+          "EN": "Cleansing, peel, mask and facial massage."
+        },
+        "categoryId": "price-face",
+        "price": {
+          "onAgreement": false,
+          "value": "65.00",
+          "currency": "EUR",
+          "unit": "ITEM",
+          "tax": 22
+        },
+        "images": [
+          {
+            "id": "price-7-1",
+            "file": "/images/ritual-obraz.webp"
+          },
+          {
+            "id": "price-7-2",
+            "file": "/images/storitev-obraz.webp"
+          }
+        ],
+        "features": [
+          {
+            "label": {
+              "SL": "Trajanje",
+              "EN": "Length"
+            },
+            "value": {
+              "SL": "60 minut",
+              "EN": "60 minutes"
+            }
+          },
+          {
+            "label": {
+              "SL": "Analiza kože",
+              "EN": "Skin analysis"
+            },
+            "value": {
+              "SL": "Vključena",
+              "EN": "Included"
+            }
+          },
+          {
+            "label": {
+              "SL": "Rutina za dom",
+              "EN": "Home routine"
+            },
+            "value": {
+              "SL": "Pisna",
+              "EN": "Written"
+            }
+          }
+        ],
+        "recommended": false,
+        "status": "AVAILABLE"
+      },
+      {
+        "title": {
+          "SL": "Serija liftinga obraza",
+          "EN": "Facial lift series"
+        },
+        "text": {
+          "SL": "Šest obiskov z mikrotokovi in limfno drenažo.",
+          "EN": "Six visits of microcurrent and lymphatic drainage."
+        },
+        "categoryId": "price-face",
+        "price": {
+          "onAgreement": false,
+          "value": "320.00",
+          "discountedValue": "290.00",
+          "currency": "EUR",
+          "unit": "ITEM",
+          "tax": 22
+        },
+        "images": [
+          {
+            "id": "price-8-1",
+            "file": "/images/ritual-estetika.webp"
+          },
+          {
+            "id": "price-8-2",
+            "file": "/images/storitev-obraz.webp"
+          }
+        ],
+        "features": [
+          {
+            "label": {
+              "SL": "Obiski",
+              "EN": "Visits"
+            },
+            "value": {
+              "SL": "6 × 45 minut",
+              "EN": "6 × 45 minutes"
+            }
+          },
+          {
+            "label": {
+              "SL": "Razmik",
+              "EN": "Interval"
+            },
+            "value": {
+              "SL": "En teden",
+              "EN": "One week"
+            }
+          },
+          {
+            "label": {
+              "SL": "Veljavnost",
+              "EN": "Valid for"
+            },
+            "value": {
+              "SL": "3 mesece",
+              "EN": "3 months"
+            }
+          }
+        ],
+        "recommended": false,
+        "status": "COMING_SOON"
+      },
+      {
+        "title": {
+          "SL": "Manikura s trajnim lakom",
+          "EN": "Manicure with long-lasting polish"
+        },
+        "text": {
+          "SL": "Oblikovanje, nega obnohtne kože in trajni lak.",
+          "EN": "Shaping, cuticle care and long-lasting polish."
+        },
+        "categoryId": "price-nails",
+        "price": {
+          "onAgreement": false,
+          "value": "35.00",
+          "currency": "EUR",
+          "unit": "ITEM",
+          "tax": 22
+        },
+        "images": [
+          {
+            "id": "price-9-1",
+            "file": "/images/ritual-manikura.webp"
+          },
+          {
+            "id": "price-9-2",
+            "file": "/images/storitev-nohti.webp"
+          }
+        ],
+        "features": [
+          {
+            "label": {
+              "SL": "Trajanje",
+              "EN": "Length"
+            },
+            "value": {
+              "SL": "45 minut",
+              "EN": "45 minutes"
+            }
+          },
+          {
+            "label": {
+              "SL": "Obstojnost",
+              "EN": "Lasts"
+            },
+            "value": {
+              "SL": "Do 3 tedne",
+              "EN": "Up to 3 weeks"
+            }
+          },
+          {
+            "label": {
+              "SL": "Popravek",
+              "EN": "Touch-up"
+            },
+            "value": {
+              "SL": "Brezplačen v 5 dneh",
+              "EN": "Free within 5 days"
+            }
+          }
+        ],
+        "recommended": false,
+        "status": "AVAILABLE"
+      },
+      {
+        "title": {
+          "SL": "Poročni paket",
+          "EN": "Bridal package"
+        },
+        "text": {
+          "SL": "Poskusno ličenje, nega obraza in manikura za nevesto.",
+          "EN": "A make-up trial, a facial and a manicure for the bride."
+        },
+        "categoryId": "price-packages",
+        "price": {
+          "onAgreement": true,
+          "value": "0.00",
+          "currency": "EUR",
+          "unit": "ITEM",
+          "tax": 22
+        },
+        "images": [
+          {
+            "id": "price-10-1",
+            "file": "/images/ritual-lasje.webp"
+          },
+          {
+            "id": "price-10-2",
+            "file": "/images/ritual-manikura.webp"
+          }
+        ],
+        "features": [
+          {
+            "label": {
+              "SL": "Poskusno ličenje",
+              "EN": "Make-up trial"
+            },
+            "value": {
+              "SL": "Vključeno",
+              "EN": "Included"
+            }
+          },
+          {
+            "label": {
+              "SL": "Na lokaciji",
+              "EN": "On location"
+            },
+            "value": {
+              "SL": "Po dogovoru",
+              "EN": "By arrangement"
+            }
+          },
+          {
+            "label": {
+              "SL": "Spremljevalke",
+              "EN": "Bridesmaids"
+            },
+            "value": {
+              "SL": "Popust 15 %",
+              "EN": "15 % off"
+            }
+          }
+        ],
+        "recommended": false,
+        "status": "UNAVAILABLE"
+      }
+    ],
+    "showTax": true,
+    "note": {
+      "SL": "Cene vključujejo DDV. Termin lahko brezplačno prestavite do 24 ur vnaprej; darilni boni veljajo šest mesecev.",
+      "EN": "Prices include VAT. Appointments can be moved free of charge up to 24 hours ahead; gift vouchers are valid for six months."
+    }
+  },
+  "careers": {
+    "text": {
+      "SL": "Iščemo sodelavke in sodelavce, ki jim je mar za stranko pred sabo in ne le za naslednji termin.",
+      "EN": "We are looking for colleagues who care about the client in front of them, not just the next appointment."
+    },
+    "items": [
+      {
+        "title": {
+          "SL": "Masažni terapevt oziroma terapevtka",
+          "EN": "Massage therapist"
+        },
+        "text": {
+          "SL": "Izvajanje klasičnih, sproščujočih in športnih masaž ter masaže s toplimi kamni. Delo v majhni ekipi s stalnimi strankami.",
+          "EN": "Classic, relaxing and sports massage, plus hot stones. You would join a small team with loyal regulars."
+        },
+        "requirements": [
+          {
+            "SL": "Nacionalna poklicna kvalifikacija ali enakovredna izobrazba",
+            "EN": "A national vocational qualification or equivalent"
+          },
+          {
+            "SL": "Najmanj dve leti izkušenj",
+            "EN": "At least two years of experience"
+          },
+          {
+            "SL": "Znanje limfne masaže je prednost",
+            "EN": "Lymphatic massage is an advantage"
+          },
+          {
+            "SL": "Slovenščina in angleščina",
+            "EN": "Slovenian and English"
+          }
+        ],
+        "note": {
+          "SL": "Polni ali polovični delovni čas, po dogovoru.",
+          "EN": "Full or part time, by agreement."
+        }
+      },
+      {
+        "title": {
+          "SL": "Kozmetičarka",
+          "EN": "Beauty therapist"
+        },
+        "text": {
+          "SL": "Nega obraza, depilacija in svetovanje pri izbiri kozmetike. Delo z naravnimi izdelki in pisnimi rutinami za stranke.",
+          "EN": "Facials, waxing and advice on choosing skincare. You would work with natural products and written routines for clients."
+        },
+        "requirements": [
+          {
+            "SL": "Izobrazba kozmetični tehnik",
+            "EN": "A beauty technician qualification"
+          },
+          {
+            "SL": "Certifikat CIDESCO ali ITEC je prednost",
+            "EN": "CIDESCO or ITEC is an advantage"
+          },
+          {
+            "SL": "Izkušnje z občutljivo kožo",
+            "EN": "Experience with sensitive skin"
+          },
+          {
+            "SL": "Natančnost in higiena pri delu",
+            "EN": "Precision and hygiene at work"
+          }
+        ],
+        "note": {
+          "SL": "Polni delovni čas.",
+          "EN": "Full time."
+        }
+      },
+      {
+        "title": {
+          "SL": "Receptor oziroma receptorka",
+          "EN": "Receptionist"
+        },
+        "text": {
+          "SL": "Prvi stik s strankami, urejanje rezervacij in darilnih bonov ter skrb, da je salon pripravljen na vsak termin.",
+          "EN": "The first point of contact for clients, handling bookings and gift vouchers, and making sure the salon is ready for every appointment."
+        },
+        "requirements": [
+          {
+            "SL": "Izkušnje z delom s strankami",
+            "EN": "Experience working with customers"
+          },
+          {
+            "SL": "Urejenost pri delu z rezervacijskim sistemom",
+            "EN": "Care with a booking system"
+          },
+          {
+            "SL": "Slovenščina in angleščina",
+            "EN": "Slovenian and English"
+          },
+          {
+            "SL": "Delo v izmenah, vključno s soboto",
+            "EN": "Shift work, including Saturdays"
+          }
+        ],
+        "note": {
+          "SL": "Polovični delovni čas.",
+          "EN": "Part time."
+        }
+      }
+    ]
+  },
+  "faq": {
+    "text": {
+      "SL": "Najpogostejša vprašanja pred prvim obiskom. Če vašega ni med njimi, nam pišite — odgovorimo isti dan.",
+      "EN": "The questions we hear most before a first visit. If yours is not here, write to us — we answer the same day."
+    },
+    "items": [
+      {
+        "question": {
+          "SL": "Kako se pripravim na prvi obisk?",
+          "EN": "How do I prepare for my first visit?"
+        },
+        "answer": {
+          "SL": "Pridite deset minut prej, da izpolnite kratek vprašalnik. Pred masažo ne jejte obilno, pred nego obraza pa ne uporabljajte pilinga dva dni.",
+          "EN": "Arrive ten minutes early to fill in a short questionnaire. Avoid a heavy meal before a massage, and skip exfoliants for two days before a facial."
+        }
+      },
+      {
+        "question": {
+          "SL": "Ali lahko termin prestavim?",
+          "EN": "Can I move my appointment?"
+        },
+        "answer": {
+          "SL": "Da, brezplačno do 24 ur pred terminom prek spleta ali telefona. Pri kasnejši odpovedi zaračunamo polovico cene.",
+          "EN": "Yes, free of charge up to 24 hours before, online or by phone. For later cancellations we charge half the price."
+        }
+      },
+      {
+        "question": {
+          "SL": "Kako dolgo velja darilni bon?",
+          "EN": "How long is a gift voucher valid?"
+        },
+        "answer": {
+          "SL": "Šest mesecev od nakupa. Bon ni vezan na osebo in ga lahko uporabi kdor koli, ki ga prinese.",
+          "EN": "Six months from purchase. The voucher is not tied to a person and can be used by whoever brings it."
+        }
+      },
+      {
+        "question": {
+          "SL": "Ali lahko pridem na masažo v nosečnosti?",
+          "EN": "Can I have a massage during pregnancy?"
+        },
+        "answer": {
+          "SL": "Da, od 14. tedna nosečnosti, v bočnem položaju in brez toplih kamnov. Prosimo, da nosečnost omenite ob rezervaciji.",
+          "EN": "Yes, from the 14th week, lying on your side and without hot stones. Please mention your pregnancy when booking."
+        }
+      },
+      {
+        "question": {
+          "SL": "Kakšno kozmetiko uporabljate?",
+          "EN": "Which skincare do you use?"
+        },
+        "answer": {
+          "SL": "Naravno, pretežno vegansko kozmetiko slovenskih in evropskih proizvajalcev s certifikatom NATRUE. Seznam sestavin vam radi pokažemo.",
+          "EN": "Natural, mostly vegan skincare from Slovenian and European makers certified by NATRUE. We are happy to show you the ingredient list."
+        }
+      },
+      {
+        "question": {
+          "SL": "Ali imate parkirišče?",
+          "EN": "Is there parking?"
+        },
+        "answer": {
+          "SL": "Najbližje parkirišče je na Trnovskem pristanu, dve minuti hoje. Za stranke z dolgimi termini povrnemo parkirnino do dveh ur.",
+          "EN": "The nearest car park is on Trnovski pristan, a two-minute walk. For longer appointments we refund up to two hours of parking."
+        }
+      },
+      {
+        "question": {
+          "SL": "Ali lahko pridem s prijateljico?",
+          "EN": "Can I come with a friend?"
+        },
+        "answer": {
+          "SL": "Seveda. Imamo sobo za masažo v paru, manikuro pa lahko opravite sočasno pri dveh mizah.",
+          "EN": "Of course. We have a room for couples massage, and manicures can be done side by side at two tables."
+        }
+      }
+    ]
+  },
+  "schedule": {
+    "title": {
+      "SL": "Urnik terminov",
+      "EN": "Appointment times"
+    },
+    "text": {
+      "SL": "Redni tedenski termini po področjih. Individualne termine izven urnika uredimo po telefonu.",
+      "EN": "Regular weekly slots by area. Appointments outside these hours can be arranged by phone."
+    },
+    "categories": [
+      {
+        "id": "schedule-massage",
+        "name": {
+          "SL": "Masaže",
+          "EN": "Massage"
+        }
+      },
+      {
+        "id": "schedule-face",
+        "name": {
+          "SL": "Obraz",
+          "EN": "Face"
+        }
+      },
+      {
+        "id": "schedule-nails",
+        "name": {
+          "SL": "Nohti",
+          "EN": "Nails"
+        }
+      }
+    ],
+    "items": [
+      {
+        "title": {
+          "SL": "Masaže",
+          "EN": "Massage"
+        },
+        "text": {
+          "SL": "Tri sobe za masažo; soba za pare je na voljo ob četrtkih in sobotah.",
+          "EN": "Three massage rooms; the couples room is available on Thursdays and Saturdays."
+        },
+        "categoryId": "schedule-massage",
+        "rows": [
+          {
+            "cells": [
+              {
+                "SL": "Dan",
+                "EN": "Day"
+              },
+              {
+                "SL": "Termini",
+                "EN": "Slots"
+              },
+              {
+                "SL": "Vrsta",
+                "EN": "Type"
+              },
+              {
+                "SL": "Terapevtka",
+                "EN": "Therapist"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "SL": "Ponedeljek",
+                "EN": "Monday"
+              },
+              {
+                "SL": "10:00 / 13:00 / 17:00",
+                "EN": "10:00 / 13:00 / 17:00"
+              },
+              {
+                "SL": "Klasična, sproščujoča",
+                "EN": "Classic, relaxing"
+              },
+              {
+                "SL": "Eva",
+                "EN": "Eva"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "SL": "Četrtek",
+                "EN": "Thursday"
+              },
+              {
+                "SL": "12:00 / 16:00 / 19:00",
+                "EN": "12:00 / 16:00 / 19:00"
+              },
+              {
+                "SL": "Kamni, v paru",
+                "EN": "Hot stones, couples"
+              },
+              {
+                "SL": "Eva, Nika",
+                "EN": "Eva, Nika"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "SL": "Sobota",
+                "EN": "Saturday"
+              },
+              {
+                "SL": "09:00 / 11:30",
+                "EN": "09:00 / 11:30"
+              },
+              {
+                "SL": "Vse vrste",
+                "EN": "All types"
+              },
+              {
+                "SL": "Eva",
+                "EN": "Eva"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "SL": "Nega obraza",
+          "EN": "Facials"
+        },
+        "text": {
+          "SL": "Rituali obraza in serije liftinga; prvi obisk vedno vključuje analizo kože.",
+          "EN": "Facial rituals and lift series; the first visit always includes a skin analysis."
+        },
+        "categoryId": "schedule-face",
+        "rows": [
+          {
+            "cells": [
+              {
+                "SL": "Dan",
+                "EN": "Day"
+              },
+              {
+                "SL": "Termini",
+                "EN": "Slots"
+              },
+              {
+                "SL": "Obravnava",
+                "EN": "Treatment"
+              },
+              {
+                "SL": "Trajanje",
+                "EN": "Length"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "SL": "Torek",
+                "EN": "Tuesday"
+              },
+              {
+                "SL": "09:00 / 14:00",
+                "EN": "09:00 / 14:00"
+              },
+              {
+                "SL": "Ritual obraza",
+                "EN": "Facial ritual"
+              },
+              {
+                "SL": "60 min",
+                "EN": "60 min"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "SL": "Sreda",
+                "EN": "Wednesday"
+              },
+              {
+                "SL": "10:00 / 15:00 / 18:00",
+                "EN": "10:00 / 15:00 / 18:00"
+              },
+              {
+                "SL": "Globinska nega",
+                "EN": "Deep facial"
+              },
+              {
+                "SL": "90 min",
+                "EN": "90 min"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "SL": "Petek",
+                "EN": "Friday"
+              },
+              {
+                "SL": "11:00 / 16:00",
+                "EN": "11:00 / 16:00"
+              },
+              {
+                "SL": "Lifting brez igel",
+                "EN": "Needle-free lift"
+              },
+              {
+                "SL": "45 min",
+                "EN": "45 min"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": {
+          "SL": "Manikura in pedikura",
+          "EN": "Manicure and pedicure"
+        },
+        "text": {
+          "SL": "Kotiček za nohte je odprt vse delovne dni; medicinska pedikura ob sredah.",
+          "EN": "The nail corner is open every weekday; medical pedicures on Wednesdays."
+        },
+        "categoryId": "schedule-nails",
+        "rows": [
+          {
+            "cells": [
+              {
+                "SL": "Dan",
+                "EN": "Day"
+              },
+              {
+                "SL": "Okno",
+                "EN": "Window"
+              },
+              {
+                "SL": "Storitev",
+                "EN": "Service"
+              },
+              {
+                "SL": "Mesta",
+                "EN": "Places"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "SL": "Ponedeljek – petek",
+                "EN": "Monday – Friday"
+              },
+              {
+                "SL": "09:00 – 19:00",
+                "EN": "09:00 – 19:00"
+              },
+              {
+                "SL": "Manikura, gel",
+                "EN": "Manicure, gel"
+              },
+              {
+                "SL": "2",
+                "EN": "2"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "SL": "Sreda",
+                "EN": "Wednesday"
+              },
+              {
+                "SL": "12:00 – 18:00",
+                "EN": "12:00 – 18:00"
+              },
+              {
+                "SL": "Medicinska pedikura",
+                "EN": "Medical pedicure"
+              },
+              {
+                "SL": "1",
+                "EN": "1"
+              }
+            ]
+          },
+          {
+            "cells": [
+              {
+                "SL": "Sobota",
+                "EN": "Saturday"
+              },
+              {
+                "SL": "09:00 – 13:00",
+                "EN": "09:00 – 13:00"
+              },
+              {
+                "SL": "Spa pedikura",
+                "EN": "Spa pedicure"
+              },
+              {
+                "SL": "2",
+                "EN": "2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "events": {
+    "text": {
+      "SL": "Delavnice in večeri v salonu. Namenjeni so strankam in vsem, ki bi nas radi spoznali.",
+      "EN": "Workshops and evenings at the salon, for clients and anyone who would like to get to know us."
+    },
+    "categories": [
+      {
+        "id": "events-workshop",
+        "name": {
+          "SL": "Delavnica",
+          "EN": "Workshop"
+        }
+      },
+      {
+        "id": "events-evening",
+        "name": {
+          "SL": "Večer",
+          "EN": "Evening"
+        }
+      },
+      {
+        "id": "events-open",
+        "name": {
+          "SL": "Odprti dan",
+          "EN": "Open day"
+        }
+      }
+    ],
+    "showApplyButton": true,
+    "items": [
+      {
+        "title": {
+          "SL": "Večer aromaterapije",
+          "EN": "An aromatherapy evening"
+        },
+        "text": {
+          "SL": "<p>Spoznamo osem eteričnih olj, njihove vonje in učinke ter se naučimo mešati olje za masažo doma.</p><p>Vsaka udeleženka odnese svojo stekleničko mešanice. Število mest je omejeno na dvanajst.</p>",
+          "EN": "<p>We get to know eight essential oils, their scents and effects, and learn to blend a massage oil for home.</p><p>Everyone takes home a bottle of their own blend. Places are limited to twelve.</p>"
+        },
+        "date": "2026-10-15T18:30:00+02:00",
+        "location": {
+          "SL": "Mirna Spa & Beauty, Ljubljana",
+          "EN": "Mirna Spa & Beauty, Ljubljana"
+        },
+        "categoryId": "events-evening",
+        "isCancelled": false,
+        "image": {
+          "id": "event-aroma",
+          "file": "/images/dogodek-aroma.webp"
+        }
+      },
+      {
+        "title": {
+          "SL": "Masaža za nosečnice in partnerje",
+          "EN": "Pregnancy massage for couples"
+        },
+        "text": {
+          "SL": "<p>Delavnica za pare, kjer Eva pokaže preproste gibe za hrbet, noge in stopala v času nosečnosti.</p><p>Prinesite udobna oblačila in blazino; olja in podloge so pripravljeni.</p>",
+          "EN": "<p>A workshop for couples in which Eva shows simple moves for the back, legs and feet during pregnancy.</p><p>Bring comfortable clothes and a cushion; oils and mats are provided.</p>"
+        },
+        "date": "2026-11-07T10:00:00+01:00",
+        "location": {
+          "SL": "Mirna Spa & Beauty, Ljubljana",
+          "EN": "Mirna Spa & Beauty, Ljubljana"
+        },
+        "categoryId": "events-workshop",
+        "isCancelled": false,
+        "image": {
+          "id": "event-prenatal",
+          "file": "/images/dogodek-nosecnice.webp"
+        }
+      },
+      {
+        "title": {
+          "SL": "Manikura doma, ki zdrži",
+          "EN": "A home manicure that lasts"
+        },
+        "text": {
+          "SL": "<p>Tina razloži, kako pripraviti noht, zakaj se lak lušči in kako ga nanesti v tankih plasteh.</p><p>Vsaka udeleženka dobi komplet za nego obnohtne kože.</p>",
+          "EN": "<p>Tina explains how to prepare the nail, why polish chips and how to apply it in thin coats.</p><p>Everyone receives a cuticle-care kit.</p>"
+        },
+        "date": "2026-11-21T17:00:00+01:00",
+        "location": {
+          "SL": "Mirna Spa & Beauty, Ljubljana",
+          "EN": "Mirna Spa & Beauty, Ljubljana"
+        },
+        "categoryId": "events-workshop",
+        "isCancelled": false,
+        "image": {
+          "id": "event-nails",
+          "file": "/images/dogodek-nohti.webp"
+        }
+      },
+      {
+        "title": {
+          "SL": "Dan odprtih vrat",
+          "EN": "Open day"
+        },
+        "text": {
+          "SL": "<p>Ogled sob, analiza kože in desetminutne masaže rok brez prijave in plačila.</p><p>Za obiskovalke tega dne velja 20 % popust na prvi obisk.</p>",
+          "EN": "<p>A look around the rooms, a skin analysis and ten-minute hand massages, with no booking and no charge.</p><p>Visitors on the day get 20 % off their first appointment.</p>"
+        },
+        "date": "2026-10-03T10:00:00+02:00",
+        "location": {
+          "SL": "Mirna Spa & Beauty, Ljubljana",
+          "EN": "Mirna Spa & Beauty, Ljubljana"
+        },
+        "categoryId": "events-open",
+        "isCancelled": true,
+        "image": {
+          "id": "event-open-day",
+          "file": "/images/dogodek-odprti-dan.webp"
+        }
+      },
+      {
+        "title": {
+          "SL": "Pričeske za praznike",
+          "EN": "Hairstyles for the holidays"
+        },
+        "text": {
+          "SL": "<p>Lara pokaže tri pričeske, ki jih naredite sami v dvajsetih minutah, in razloži, kako lase pripraviti večer prej.</p><p>Primerno za srednje dolge in dolge lase.</p>",
+          "EN": "<p>Lara shows three styles you can do yourself in twenty minutes and explains how to prepare your hair the night before.</p><p>Suitable for medium and long hair.</p>"
+        },
+        "date": "2026-12-12T11:00:00+01:00",
+        "location": {
+          "SL": "Mirna Spa & Beauty, Ljubljana",
+          "EN": "Mirna Spa & Beauty, Ljubljana"
+        },
+        "categoryId": "events-workshop",
+        "isCancelled": false,
+        "image": {
+          "id": "event-hair",
+          "file": "/images/dogodek-lasje.webp"
+        }
+      }
+    ]
+  },
+  "optionalSections": {
+    "team": true,
+    "experience": true,
+    "reviews": true,
+    "portfolio": true,
+    "gallery": true,
+    "clients": true,
+    "services": true,
+    "blog": true,
+    "videos": true,
+    "catalogues": true,
+    "pricing": true,
+    "careers": true,
+    "subscribe": true,
+    "faq": true,
+    "schedule": true,
+    "events": true
+  }
+}
