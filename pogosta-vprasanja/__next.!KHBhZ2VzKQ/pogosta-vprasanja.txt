@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[21560,["/sitegen-landing-ui-005/_next/static/chunks/0.526g2f9kd2h.js","/sitegen-landing-ui-005/_next/static/chunks/0nww5p-f7fs3~.js","/sitegen-landing-ui-005/_next/static/chunks/0.5enziy8en7j.js","/sitegen-landing-ui-005/_next/static/chunks/0ymm9s~4fggi..js"],"default"]
-3:I[18825,["/sitegen-landing-ui-005/_next/static/chunks/0.526g2f9kd2h.js","/sitegen-landing-ui-005/_next/static/chunks/0nww5p-f7fs3~.js","/sitegen-landing-ui-005/_next/static/chunks/0.5enziy8en7j.js","/sitegen-landing-ui-005/_next/static/chunks/0ymm9s~4fggi..js"],"default"]
+2:I[21560,["/sitegen-landing-ui-005/_next/static/chunks/0.526g2f9kd2h.js","/sitegen-landing-ui-005/_next/static/chunks/0hu6.i5vm~92d.js","/sitegen-landing-ui-005/_next/static/chunks/0.5enziy8en7j.js","/sitegen-landing-ui-005/_next/static/chunks/0ymm9s~4fggi..js"],"default"]
+3:I[18825,["/sitegen-landing-ui-005/_next/static/chunks/0.526g2f9kd2h.js","/sitegen-landing-ui-005/_next/static/chunks/0hu6.i5vm~92d.js","/sitegen-landing-ui-005/_next/static/chunks/0.5enziy8en7j.js","/sitegen-landing-ui-005/_next/static/chunks/0ymm9s~4fggi..js"],"default"]
 4:[]
-0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"ldysmC4yHW-I1LjcSB83z"}
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"UUaQItJR1iKF2D_FI2f5A"}
