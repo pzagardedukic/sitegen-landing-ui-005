@@ -88,7 +88,13 @@ export default function HeaderLayout({
           color: scrolled
             ? theme.palette.header.text
             : theme.palette.header.onImage,
-          "--logo-filter": scrolled ? "none" : "brightness(0) invert(1)",
+          /*
+           * DARK (ui-005): the pill is dark in BOTH states — glass over the photograph and
+           * the solid surface once the page moves — so the customer logo is flattened to
+           * white throughout. In the light theme the scrolled pill is white and the logo is
+           * shown as supplied, which is where these two themes part.
+           */
+          "--logo-filter": "brightness(0) invert(1)",
           "--pill-border": scrolled
             ? theme.palette.header.border
             : "transparent",

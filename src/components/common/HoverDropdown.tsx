@@ -99,7 +99,12 @@ export default function HoverDropdown({
                 backgroundColor: theme.palette.background.paper,
                 border: `1px solid ${theme.palette.surfaces.border}`,
                 borderRadius: "16px",
-                boxShadow: `0 16px 40px ${alpha(theme.palette.text.primary, 0.08)}`,
+                /*
+                 * DARK (ui-005): a shadow is cast, not tinted — it has to be darker than
+                 * the page. The light theme wrote it as the text colour at 8 %, which in
+                 * the dark twin is near-white and turned the drop shadow into a glow.
+                 */
+                boxShadow: `0 16px 40px ${alpha(theme.palette.common.black, 0.55)}`,
                 overflow: "hidden",
               })}
             >

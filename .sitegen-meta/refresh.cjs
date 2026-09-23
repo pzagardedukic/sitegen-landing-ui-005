@@ -46394,7 +46394,13 @@ function HeaderLayout({
             backdropFilter: scrolled ? "none" : "blur(16px)",
             WebkitBackdropFilter: scrolled ? "none" : "blur(16px)",
             color: scrolled ? theme2.palette.header.text : theme2.palette.header.onImage,
-            "--logo-filter": scrolled ? "none" : "brightness(0) invert(1)",
+            /*
+             * DARK (ui-005): the pill is dark in BOTH states — glass over the photograph and
+             * the solid surface once the page moves — so the customer logo is flattened to
+             * white throughout. In the light theme the scrolled pill is white and the logo is
+             * shown as supplied, which is where these two themes part.
+             */
+            "--logo-filter": "brightness(0) invert(1)",
             "--pill-border": scrolled ? theme2.palette.header.border : "transparent",
             transition: theme2.transitions.create(
               ["background-color", "border-color", "color"],
@@ -47232,7 +47238,12 @@ function HoverDropdown({
                   backgroundColor: theme2.palette.background.paper,
                   border: `1px solid ${theme2.palette.surfaces.border}`,
                   borderRadius: "16px",
-                  boxShadow: `0 16px 40px ${alpha(theme2.palette.text.primary, 0.08)}`,
+                  /*
+                   * DARK (ui-005): a shadow is cast, not tinted — it has to be darker than
+                   * the page. The light theme wrote it as the text colour at 8 %, which in
+                   * the dark twin is near-white and turned the drop shadow into a glow.
+                   */
+                  boxShadow: `0 16px 40px ${alpha(theme2.palette.common.black, 0.55)}`,
                   overflow: "hidden"
                 }),
                 children: /* @__PURE__ */ (0, import_jsx_runtime82.jsx)(List_default, { sx: { py: 1 }, children: items.map(
