@@ -1,0 +1,11 @@
+{
+  "description": "Zelo svetla primarna barva: podlaga strani se izpelje iz nje, zato mora ostati temna in berljiva.",
+  "patch": {
+    "theme": {
+      "colors": {
+        "primary": "#F2E3C8",
+        "secondary": "#FBEDE9"
+      }
+    }
+  }
+}

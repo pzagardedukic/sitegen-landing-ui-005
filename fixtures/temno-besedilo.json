@@ -1,0 +1,11 @@
+{
+  "description": "Stranka izbere temno barvo besedila (privzeta #1A1A1A). V temni temi se ne sme uporabiti kot barva besedila strani, ampak samo na njenih svetlih ploskvah.",
+  "patch": {
+    "theme": {
+      "colors": {
+        "text": "#0B0B0B",
+        "primary": "#6E5A3C"
+      }
+    }
+  }
+}

@@ -203,5 +203,7 @@ neuspelih zahtev.
 - `theme.id` temne različice v čarovniku `sitegen_v2` še ni dodeljen.
 - Fixture za **temno strankino barvo besedila** še ni dodan; paleta je za ta primer
   zasnovana (besedilo strani se ne jemlje iz `text`), a to še ni preizkušeno s `test:variants`.
-- Popravek treh komponent (`primary.contrastText` na beli ploskvi) je smiselno prenesti v
-  `ui-004`, kjer je brez vizualnega učinka.
+- Popravka treh komponent (`primary.contrastText` na beli ploskvi) **ni mogoče prenesti v `ui-004`**:
+  tam je `primary.contrastText` bela (napis na zlatem gumbu), zato bi na beli ploskvi dal belo
+  na belem. V `ui-005` je ta token strankina temna barva besedila, zato tam drži. Razlika je
+  zavestna in je razlog, da datoteki `colors.ts` v obeh repozitorijih nista zamenljivi.

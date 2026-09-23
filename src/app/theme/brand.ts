@@ -1,4 +1,4 @@
-import { alpha, darken, lighten } from "@mui/material/styles";
+import { alpha, darken, getContrastRatio, lighten } from "@mui/material/styles";
 
 /*
  * Everything in this file is derived from the three colors a customer can actually
@@ -62,24 +62,62 @@ export function darkGround(primary: string): string {
  * createPreviewTheme() for a customer's overrides — so there is one definition, the same
  * reason headerPalette/footerPalette/brandSurfaces exist.
  */
+/*
+ * Lift a brand colour until it is readable on the dark ground.
+ *
+ * A fixed lift is not enough: it was fitted on Lumiera's gold (#B48E5A), and a customer
+ * with a darker brand — #6E5A3C, say — landed at 4.07:1 for links and 3.95:1 for the badge
+ * text laid on it, both under AA. The loop keeps the customer's hue and raises only as far
+ * as it must; the cap stops a near-black brand from being lightened into a different colour
+ * altogether (at which point nothing can save it and the page still reads, just without the
+ * brand accent at small sizes).
+ */
+function liftToContrast(
+  colour: string,
+  ground: string,
+  target: number,
+): string {
+  /*
+   * The 12 % floor is the theme, not the contrast rule: it is what makes a light-theme
+   * brand colour read as itself on a dark ground, and it is the value drawn on the Figma
+   * page (Lumiera gold #B48E5A becomes #BD9C6E). The loop raises it further only when the
+   * floor is not enough.
+   */
+  let lifted = lighten(colour, 0.12);
+  for (let step = 1; step < 40; step += 1) {
+    if (getContrastRatio(lifted, ground) >= target) break;
+    lifted = lighten(colour, 0.12 + step * 0.02);
+  }
+  return lifted;
+}
+
 export function brandBase({ primary, secondary, text }: BrandColors) {
+  const ground = darkGround(primary);
+  const pageType = lighten(primary, 0.93);
+  const primaryMain = liftToContrast(primary, ground, 4.5);
+
   return {
     primary: {
-      /* Lifted a step: a light-theme brand colour reads dull on a dark ground. */
-      main: lighten(primary, 0.12),
-      /* Type ON the brand colour, where the ground is light again. */
-      contrastText: text,
+      /* Lifted until it is readable on the dark ground — see liftToContrast. */
+      main: primaryMain,
+      /*
+       * Type ON the brand colour, where the ground is light again. The customer's own text
+       * colour first; if their brand is dark enough that its own label would fail, the page
+       * type takes over — one of the two always clears AA, because the brand sits between.
+       */
+      contrastText:
+        getContrastRatio(text, primaryMain) >= 4.5 ? text : pageType,
     },
     secondary: {
       main: secondary,
       contrastText: text,
     },
     background: {
-      default: darkGround(primary),
+      default: ground,
       paper: darken(primary, 0.85),
     },
     text: {
-      primary: lighten(primary, 0.93),
+      primary: pageType,
       /* Figma `text-muted` — the light theme's slate, lifted onto the dark ground. */
       secondary: lighten(LUMIERA.slate, 0.55),
     },

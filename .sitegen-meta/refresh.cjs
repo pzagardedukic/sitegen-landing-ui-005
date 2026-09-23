@@ -13071,7 +13071,7 @@ var init_static2 = __esm({
     init_website();
     landingStatic = createLandingStatic({
       website: website_default,
-      basePath: "/sitegen-landing-ui-005"
+      basePath: ""
     });
     ({
       BASE_PATH,
@@ -45878,24 +45878,39 @@ var LUMIERA = {
 function darkGround(primary) {
   return darken(primary, 0.93);
 }
+function liftToContrast(colour, ground, target) {
+  let lifted = lighten(colour, 0.12);
+  for (let step = 1; step < 40; step += 1) {
+    if (getContrastRatio(lifted, ground) >= target) break;
+    lifted = lighten(colour, 0.12 + step * 0.02);
+  }
+  return lifted;
+}
 function brandBase({ primary, secondary, text }) {
+  const ground = darkGround(primary);
+  const pageType = lighten(primary, 0.93);
+  const primaryMain = liftToContrast(primary, ground, 4.5);
   return {
     primary: {
-      /* Lifted a step: a light-theme brand colour reads dull on a dark ground. */
-      main: lighten(primary, 0.12),
-      /* Type ON the brand colour, where the ground is light again. */
-      contrastText: text
+      /* Lifted until it is readable on the dark ground — see liftToContrast. */
+      main: primaryMain,
+      /*
+       * Type ON the brand colour, where the ground is light again. The customer's own text
+       * colour first; if their brand is dark enough that its own label would fail, the page
+       * type takes over — one of the two always clears AA, because the brand sits between.
+       */
+      contrastText: getContrastRatio(text, primaryMain) >= 4.5 ? text : pageType
     },
     secondary: {
       main: secondary,
       contrastText: text
     },
     background: {
-      default: darkGround(primary),
+      default: ground,
       paper: darken(primary, 0.85)
     },
     text: {
-      primary: lighten(primary, 0.93),
+      primary: pageType,
       /* Figma `text-muted` — the light theme's slate, lifted onto the dark ground. */
       secondary: lighten(LUMIERA.slate, 0.55)
     }
