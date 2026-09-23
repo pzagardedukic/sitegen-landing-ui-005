@@ -1,0 +1,2 @@
+:HL["/sitegen-landing-ui-005/_next/static/chunks/0sn0e8y3.j~1p.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"ldysmC4yHW-I1LjcSB83z"}
