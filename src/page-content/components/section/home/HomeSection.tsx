@@ -101,7 +101,8 @@ export default function HomeSection() {
           color: "inherit",
           "&:hover .scroll-cue": {
             backgroundColor: theme.palette.surfaces.onImage,
-            color: theme.palette.text.primary,
+            /* Type on the white cue — see ArrowButton's white tone. */
+            color: theme.palette.primary.contrastText,
           },
         })}
       >

@@ -39,7 +39,8 @@ function toneSx(tone: CircleButtonTone, theme: Theme) {
       return {
         base: {
           backgroundColor: palette.surfaces.onImage,
-          color: palette.text.primary,
+          /* Type on the white ground — see the same case in ArrowButton. */
+          color: palette.primary.contrastText,
         },
         hover: toPrimary,
       };

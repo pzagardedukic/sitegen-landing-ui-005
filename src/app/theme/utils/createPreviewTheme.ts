@@ -1,7 +1,9 @@
 import { createTheme, Theme } from "@mui/material/styles";
 import baseTheme from "@/theme";
 import { ThemeSettings } from "@/core/types";
+import { brandDefaults } from "@/app/theme/colors";
 import {
+  brandBase,
   brandFill,
   brandSurfaces,
   footerPalette,
@@ -65,9 +67,15 @@ export function createPreviewTheme(input: CreatePreviewThemeInput): Theme {
    * does not.
    */
   const brand: BrandColors = {
-    primary: primary || baseTheme.palette.primary.main,
-    secondary: secondary || baseTheme.palette.secondary.main,
-    text: text || baseTheme.palette.text.primary,
+    /* Defaults, not palette values: palette.primary.main is already lifted for dark. */
+    primary: primary || brandDefaults.primary,
+    secondary: secondary || brandDefaults.secondary,
+    /*
+     * Falls back to the DEFAULT customer text, not to palette.text.primary: in the dark
+     * theme the latter is the light page type, and using it here would put light type on
+     * the customer's own light surfaces (the gold button, the header pill).
+     */
+    text: text || brandDefaults.text,
   };
 
   const resolvedBody = fontFamily(fontBody, baseTheme.typography.fontFamily);
@@ -82,28 +90,22 @@ export function createPreviewTheme(input: CreatePreviewThemeInput): Theme {
     baseTheme.typography.slogan?.fontFamily,
   );
 
+  /*
+   * DARK (ui-005): the trio is not written onto the palette as given. On a dark ground the
+   * page type has to be light and the ground itself has to follow the brand, so primary,
+   * secondary, background and text all come out of brandBase() — the same function the
+   * defaults in app/theme/colors.ts go through. Writing `text` straight onto
+   * `palette.text.primary`, as the light theme did, would put the customer's dark type on
+   * the dark page and make it disappear.
+   */
+  const base = brandBase(brand);
+
   return createTheme(baseTheme, {
     palette: {
-      ...(primary && {
-        primary: {
-          ...baseTheme.palette.primary,
-          main: primary,
-        },
-      }),
-
-      ...(secondary && {
-        secondary: {
-          ...baseTheme.palette.secondary,
-          main: secondary,
-        },
-      }),
-
-      ...(text && {
-        text: {
-          ...baseTheme.palette.text,
-          primary: text,
-        },
-      }),
+      primary: { ...baseTheme.palette.primary, ...base.primary },
+      secondary: { ...baseTheme.palette.secondary, ...base.secondary },
+      background: { ...baseTheme.palette.background, ...base.background },
+      text: { ...baseTheme.palette.text, ...base.text },
 
       // Kept in step with src/theme.ts — see the note at the top of app/theme/brand.ts.
       header: headerPalette(brand),

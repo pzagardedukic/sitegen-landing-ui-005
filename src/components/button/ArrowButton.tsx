@@ -71,7 +71,12 @@ function toneSx(tone: ArrowButtonTone, theme: Theme) {
       return {
         base: {
           backgroundColor: palette.surfaces.onImage,
-          color: palette.text.primary,
+          /*
+           * Type on the WHITE ground, so it follows the customer text colour, not the page
+           * type: in the dark theme page type is light and would vanish here. The two are
+           * the same value in the light theme, so this is not a visual change there.
+           */
+          color: palette.primary.contrastText,
         },
         hover: toPrimary,
       };

@@ -1,4 +1,9 @@
-import { footerPalette, headerPalette, type BrandColors } from "./brand";
+import {
+  brandBase,
+  footerPalette,
+  headerPalette,
+  type BrandColors,
+} from "./brand";
 
 /*
  * Defaults only — the site's theme settings override primary, secondary and text.
@@ -7,6 +12,11 @@ import { footerPalette, headerPalette, type BrandColors } from "./brand";
  *
  * The three defaults are the Lumiera Figma tokens: primary #b48e5a (gold), secondary
  * #d9a7a0 (rose) and text #1a1a1a.
+ *
+ * DARK (ui-005): the trio is the same as in ui-004 — it is the same theme. What changes is
+ * what gets built out of it: the page ground is the far dark end of primary, page type its
+ * far light end, and the customer's `text` is kept for type laid on their own light
+ * colours. The derivation lives in brandBase() so the override path matches exactly.
  */
 export const brandDefaults: BrandColors = {
   primary: "#B48E5A",
@@ -15,23 +25,7 @@ export const brandDefaults: BrandColors = {
 };
 
 export const colorConfig = {
-  primary: {
-    main: brandDefaults.primary,
-    contrastText: "#FFFFFF",
-  },
-  secondary: {
-    main: brandDefaults.secondary,
-    contrastText: brandDefaults.text,
-  },
-  background: {
-    default: "#FFFFFF",
-    paper: "#FFFFFF",
-  },
-  text: {
-    primary: brandDefaults.text,
-    // Figma `text-muted`.
-    secondary: "#4C5C68",
-  },
+  ...brandBase(brandDefaults),
   header: headerPalette(brandDefaults),
   footer: footerPalette(),
 };

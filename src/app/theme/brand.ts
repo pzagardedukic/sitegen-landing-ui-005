@@ -1,4 +1,4 @@
-import { alpha, lighten } from "@mui/material/styles";
+import { alpha, darken, lighten } from "@mui/material/styles";
 
 /*
  * Everything in this file is derived from the three colors a customer can actually
@@ -10,9 +10,17 @@ import { alpha, lighten } from "@mui/material/styles";
  * defaults while still looking correct locally. Both paths call the functions below,
  * so there is only one definition to keep right.
  *
- * The lighten amounts are fitted so the defaults land on the Figma tokens of the
- * `sitegen / barve` collection: primary #b48e5a gives bg-alt #f7f3ef, surface #faf7f6 and
- * placeholder #e9e1d8 to within a step; secondary #d9a7a0 gives the rose wash.
+ * DARK (ui-005). This is the dark twin of ui-004: the same design, the same three brand
+ * colors, the palette mirrored to a dark ground. Every value below stays a derivation, so a
+ * customer who picks their own primary and secondary still gets a coherent dark page —
+ * `darken(primary, …)` where the light theme had `lighten(primary, …)`, at amounts fitted
+ * so the defaults land on the tokens drawn on the Figma page `dark — Lumiera`:
+ * background #0D0A06, bg-alt #16110B, paper #1B150E, surface #201A10, placeholder #362B1B.
+ *
+ * The customer's `text` colour is deliberately NOT used as page type here (it is dark by
+ * definition — the default is #1A1A1A, which would vanish). Dark type comes from the
+ * light end of the primary instead; `text` still drives the header pill, where the ground
+ * is light.
  */
 
 export type BrandColors = {
@@ -27,14 +35,56 @@ export type BrandColors = {
  * whole design uses, overlay is the colour laid over photographs, and the slate is the
  * footer ground. A customer's colours do not reach them, on purpose — they are what keeps
  * any brand colour looking like this theme.
+ *
+ * In the dark twin the two light-ground tokens (mint, slate) are used as the *tint* that
+ * is mixed into the dark ground rather than as the ground itself; `border` is no longer a
+ * light hairline at all, so it is computed from primary instead (see brandSurfaces).
  */
 const LUMIERA = {
   mint: "#ECF5F4",
-  border: "#E7E9EB",
   overlay: "#1A1A1A",
   slate: "#4C5C68",
   white: "#FFFFFF",
 } as const;
+
+/** Page ground of the dark theme — every other surface is measured against it. */
+export function darkGround(primary: string): string {
+  return darken(primary, 0.93);
+}
+
+/*
+ * The four palette blocks that the light theme could take straight from the customer's
+ * colours and the dark one cannot: on a dark ground the page needs a light type colour and
+ * a ground derived from the brand, and the customer's own `text` (dark by definition) can
+ * only be used ON their light colours, never as page type.
+ *
+ * Both theme paths call this — src/app/theme/colors.ts for the defaults and
+ * createPreviewTheme() for a customer's overrides — so there is one definition, the same
+ * reason headerPalette/footerPalette/brandSurfaces exist.
+ */
+export function brandBase({ primary, secondary, text }: BrandColors) {
+  return {
+    primary: {
+      /* Lifted a step: a light-theme brand colour reads dull on a dark ground. */
+      main: lighten(primary, 0.12),
+      /* Type ON the brand colour, where the ground is light again. */
+      contrastText: text,
+    },
+    secondary: {
+      main: secondary,
+      contrastText: text,
+    },
+    background: {
+      default: darkGround(primary),
+      paper: darken(primary, 0.85),
+    },
+    text: {
+      primary: lighten(primary, 0.93),
+      /* Figma `text-muted` — the light theme's slate, lifted onto the dark ground. */
+      secondary: lighten(LUMIERA.slate, 0.55),
+    },
+  };
+}
 
 /*
  * Lumiera draws no gradients. The palette keeps its `brandGradient` key only because the
@@ -47,24 +97,29 @@ export function brandFill(primary: string): string {
 
 /*
  * The header pill. Over the banner photograph it is frosted glass — white at 6 % on a
- * white hairline, with white type. Once the page moves it is solid white on the Lumiera
- * hairline, with the customer's text colour.
+ * white hairline, with white type; that half is identical to the light theme, because it
+ * sits on a photograph either way. Once the page moves, the pill becomes the dark surface
+ * with light type, instead of the light theme's solid white.
  */
-export function headerPalette({ text }: BrandColors) {
+export function headerPalette({ primary }: BrandColors) {
   return {
     glass: alpha(LUMIERA.white, 0.06),
     glassBorder: LUMIERA.white,
     onImage: LUMIERA.white,
-    surface: LUMIERA.white,
-    border: LUMIERA.border,
-    text,
+    surface: darken(primary, 0.85),
+    border: darken(primary, 0.62),
+    text: lighten(primary, 0.93),
   };
 }
 
-/* The footer from the approved Figma frame: slate ground, white type, a faint white rule. */
+/*
+ * The footer. In the light theme it was the one dark block on a white page; here the page
+ * is already dark, so the footer goes a step deeper and cooler than the ground to stay a
+ * distinct band. White type and the faint white rule are unchanged.
+ */
 export function footerPalette() {
   return {
-    background: LUMIERA.slate,
+    background: darken(LUMIERA.slate, 0.72),
     text: {
       primary: LUMIERA.white,
       secondary: alpha(LUMIERA.white, 0.85),
@@ -76,30 +131,47 @@ export function footerPalette() {
 
 /* Section washes, card grounds, hairlines and image treatments. */
 export function brandSurfaces({ primary, secondary }: BrandColors) {
-  const bgAlt = lighten(primary, 0.895);
+  const ground = darkGround(primary);
+  const bgAlt = darken(primary, 0.88);
+  /*
+   * A wash is the ground with a little of the tint mixed in, not the tint itself: mixing
+   * toward the ground keeps mint cool and rose warm and still readable as two different
+   * washes, where darkening the light tokens directly collapsed both into the same grey.
+   */
+  const wash = (tint: string) => alpha(tint, 0.16);
 
   return {
-    /** Cream section wash (bg-alt). */
+    /** Section wash, one step above the page ground (bg-alt). */
     bgAlt,
-    /** Lighter cream, for cards laid on white (surface). */
-    surface: lighten(primary, 0.93),
-    /** Fixed mint wash (accent-soft). */
-    mint: LUMIERA.mint,
-    /** Rose wash from the secondary colour. */
-    rose: lighten(secondary, 0.8),
-    border: LUMIERA.border,
+    /** Card ground laid on the section wash (surface). */
+    surface: darken(primary, 0.82),
+    /** Mint wash under team and review cards, over the dark ground. */
+    mint: wash(LUMIERA.mint),
+    /** Rose wash from the secondary colour, over the dark ground. */
+    rose: wash(secondary),
+    /*
+     * The hairline is also the outline of buttons and chips (37 uses, mostly
+     * `inset 0 0 0 1px`), so it has to clear 3:1 against the LIGHTEST ground it is drawn
+     * on — the card surface — not merely be visible on the page ground.
+     */
+    border: lighten(darken(primary, 0.82), 0.34),
     /** Stand-in shown where a photograph is missing. */
-    placeholder: lighten(primary, 0.73),
-    /** Laid over photographs that carry white copy — 35 %, as the photo variant of the hero. */
-    scrim: alpha(LUMIERA.overlay, 0.35),
+    placeholder: darken(primary, 0.7),
+    /*
+     * Laid over photographs that carry white copy. Deeper than the light theme's 35 %: on a
+     * dark page the eye has no white surround to fall back on, so a photograph needs more
+     * cover before white type sits calmly on it.
+     */
+    scrim: alpha(LUMIERA.overlay, 0.5),
     /*
      * Ground of the glass caption card, under a 12px blur. The Figma frames record this fill
      * as solid overlay, but the card carries a background blur, which only reads on a
      * translucent fill: the opacity was lost when the paint was bound to its variable.
+     * Raised for dark, where 45 % black on a dark photograph all but disappeared.
      */
-    glass: alpha(LUMIERA.overlay, 0.45),
+    glass: alpha(LUMIERA.overlay, 0.62),
     onImage: LUMIERA.white,
     /** Hover and selection wash; kept under its old name for the sections not yet rebuilt. */
-    tint: bgAlt,
+    tint: ground,
   };
 }

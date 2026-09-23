@@ -90,7 +90,8 @@ const sloganFont = fontConfig.slogan.style.fontFamily;
  */
 const themeOptions: ThemeOptions = {
   palette: {
-    mode: "light",
+    /* DARK (ui-005): the dark twin of ui-004 — see app/theme/brand.ts. */
+    mode: "dark",
     primary: colorConfig.primary,
     secondary: colorConfig.secondary,
     background: colorConfig.background,

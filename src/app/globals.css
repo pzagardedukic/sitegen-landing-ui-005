@@ -2,14 +2,14 @@
  * Only what has to exist before MUI takes over. Colors and type live in the theme,
  * not here, so the theme editor can reach them.
  *
- * The light appearance is fixed on purpose: this UI ships a light theme only, so a
- * viewer whose OS is set to dark must still get the light page. The
- * prefers-color-scheme block inherited from create-next-app is deliberately gone —
- * it flipped the body behind MUI and left form controls and scrollbars dark.
+ * The dark appearance is fixed on purpose: this UI (ui-005) ships a dark theme only, so a
+ * viewer whose OS is set to light must still get the dark page. The prefers-color-scheme
+ * block inherited from create-next-app stays deliberately gone — it flipped the body
+ * behind MUI and left form controls and scrollbars out of step with the theme.
  */
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 * {
@@ -63,8 +63,9 @@ html[data-sitegen-ready="true"] #sitegen-language-recovery {
   display: grid;
   place-items: center;
   padding: 24px;
-  background: #faf7f6;
-  color: #1a1a1a;
+  /* Page ground and type of the dark theme (see app/theme/brand.ts). */
+  background: #0d0a06;
+  color: #faf7f3;
   text-align: center;
   font:
     16px/1.5 var(--font-figtree),
