@@ -201,25 +201,26 @@ neuspelih zahtev.
 ### Popravki po prvem krogu (23. 9. 2026, popoldne)
 
 - **Znamčna barva se dvigne toliko, kolikor je treba.** Fiksni dvig za 12 % je bil fitan na
-  Lumierino zlato; fixture  je pokazal, da pri temnejši znamki (#6E5A3C)
-  povezave padejo na 4,07:1 in oznake na 3,95:1.  zdaj začne pri 12 % (to
-  je vrednost iz Figme) in dviguje naprej do 4,5:1 proti podlagi; napis na gumbu izbere med
-  strankino barvo besedila in barvo besedila strani tisto, ki drži.
-- **Senca spustnega menija** je bila zapisana kot barva besedila pri 8 % — v temni temi sij
-  namesto sence. Zdaj je črna pri 55 %.
-- **** je logotip obrnil samo čez fotografijo. V temni temi je tudi pomaknjena
-  glava temna, zato je logotip obrnjen v obeh stanjih.
-- **Dva nova fixtura**:  in . Oba gresta skozi ;
-  edini zadetek je zahteva Googlovih zemljevidov na , ki je znana že iz .
+  Lumierino zlato; fixture `temno-besedilo` je pokazal, da pri temnejši znamki (`#6E5A3C`)
+  povezave padejo na 4,07:1 in oznake na 3,95:1. `liftToContrast()` zdaj začne pri 12 % —
+  to je vrednost, narisana v Figmi — in dviguje naprej, dokler barva ne doseže 4,5:1 proti
+  podlagi. `contrastText` izbere med strankino barvo besedila in barvo besedila strani
+  tisto, ki na tej barvi drži.
+- **Senca spustnega menija** je bila zapisana kot barva besedila pri 8 %; v temni temi je to
+  skoraj bela, torej sij namesto sence. Zdaj je črna pri 55 %.
+- **`--logo-filter`** je logotip obrnil samo čez fotografijo. V temni temi je tudi pomaknjena
+  glava temna, zato je logotip obrnjen v obeh stanjih; v svetli temi je pomaknjena glava bela
+  in logotip ostane, kakršen je — tu se temi razideta.
+- **Dva nova fixtura**: `temno-besedilo` in `svetla-znamka`. Oba gresta skozi
+  `pnpm test:variants`; edini zadetek je zahteva Googlovih zemljevidov na `/kontakt/`, ki je
+  znana že iz `ui-004`.
 
-Pregledano tudi na 390 px: glava kot stekleni obroček nad fotografijo, predal z menijem
-temen z zlato aktivno postavko, gumb v banneru temno besedilo na beli ploskvi.
+Pregledano tudi na 390 px: glava je stekleni obroček nad fotografijo, predal z menijem je
+temen z zlato aktivno postavko, gumb v banneru ima temno besedilo na beli ploskvi.
 
 ## Kaj ostaja
 
 - `theme.id` temne različice v čarovniku `sitegen_v2` še ni dodeljen.
-- Fixture za **temno strankino barvo besedila** še ni dodan; paleta je za ta primer
-  zasnovana (besedilo strani se ne jemlje iz `text`), a to še ni preizkušeno s `test:variants`.
 - Popravka treh komponent (`primary.contrastText` na beli ploskvi) **ni mogoče prenesti v `ui-004`**:
   tam je `primary.contrastText` bela (napis na zlatem gumbu), zato bi na beli ploskvi dal belo
   na belem. V `ui-005` je ta token strankina temna barva besedila, zato tam drži. Razlika je
