@@ -220,7 +220,10 @@ temen z zlato aktivno postavko, gumb v banneru ima temno besedilo na beli ploskv
 
 ## Kaj ostaja
 
-- `theme.id` temne različice v čarovniku `sitegen_v2` še ni dodeljen.
+- Identiteta repozitorija je **samo `uiId: "005"`** (v `sitegen-ui.json` in `package.json`),
+  enako kot ima `ui-004` svoj `004`. Prejšnja opomba o `theme.id` je bila prepisana iz načrta
+  za `ui-003` in ne velja: vpis teme v čarovnik `ptlabTadej/sitegen_v2` je ločena odločitev
+  in ločen repozitorij, ne naloga te kode.
 - Popravka treh komponent (`primary.contrastText` na beli ploskvi) **ni mogoče prenesti v `ui-004`**:
   tam je `primary.contrastText` bela (napis na zlatem gumbu), zato bi na beli ploskvi dal belo
   na belem. V `ui-005` je ta token strankina temna barva besedila, zato tam drži. Razlika je
