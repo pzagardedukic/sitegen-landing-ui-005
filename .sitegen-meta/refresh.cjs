@@ -52185,7 +52185,11 @@ function ClientLogoSlider({
                 src: client.src,
                 alt: "",
                 loading: "lazy",
-                sx: { maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }
+                sx: {
+                  maxWidth: "100%",
+                  maxHeight: "100%",
+                  objectFit: "contain"
+                }
               }
             )
           }

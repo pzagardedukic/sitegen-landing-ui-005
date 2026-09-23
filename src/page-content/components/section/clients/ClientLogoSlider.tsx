@@ -23,13 +23,21 @@ function linkLabel(href: string): string {
 }
 
 /*
- * The client strip from the Lumiera frames: logos in their own colours in 216 × 110 boxes
+ * The client strip from the Lumiera frames: logos in 216 × 110 boxes
  * rounded 12, 24 apart, running edge to edge and scrolling past; under each logo its link,
  * 14 below, as muted underlined text. The logo opens the same link, but only the text is
  * in the tab order, so a keyboard user meets each client once.
  *
  * Every entry keeps the link line's height even without a link, so a row that mixes the two
  * does not jump.
+ */
+/*
+ * DARK (ui-005): the component is unchanged from ui-004. A client logo arrives as dark ink
+ * on an opaque white background, which would be a row of white plaques here, so the demo
+ * data points at inverted copies with a transparent ground
+ * (public/images/clients/dark/*.png). Doing it in the data rather than with a CSS filter
+ * keeps this file identical to the light theme, and a customer supplying their own dark
+ * logo needs no exception.
  */
 export default function ClientLogoSlider({
   clients,
@@ -84,7 +92,11 @@ export default function ClientLogoSlider({
               src={client.src}
               alt=""
               loading="lazy"
-              sx={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }}
+              sx={{
+                maxWidth: "100%",
+                maxHeight: "100%",
+                objectFit: "contain",
+              }}
             />
           </Box>
 

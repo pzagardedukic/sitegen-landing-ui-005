@@ -315,21 +315,21 @@
         "url": "https://example.com/certifications/cidesco",
         "image": {
           "id": "certificate-cidesco",
-          "file": "https://placehold.co/720x360/FFFFFF/1A1A1A?text=CIDESCO"
+          "file": "https://placehold.co/720x360/1B150E/FAF7F3?text=CIDESCO"
         }
       },
       {
         "url": "https://example.com/certifications/itec",
         "image": {
           "id": "certificate-itec",
-          "file": "https://placehold.co/720x360/FFFFFF/1A1A1A?text=ITEC"
+          "file": "https://placehold.co/720x360/1B150E/FAF7F3?text=ITEC"
         }
       },
       {
         "url": "https://example.com/certifications/natrue",
         "image": {
           "id": "certificate-natrue",
-          "file": "https://placehold.co/720x360/FFFFFF/1A1A1A?text=NATRUE"
+          "file": "https://placehold.co/720x360/1B150E/FAF7F3?text=NATRUE"
         }
       }
     ]
@@ -681,49 +681,49 @@
       {
         "image": {
           "id": "client-goodness",
-          "file": "/images/clients/goodness.webp"
+          "file": "/images/clients/dark/goodness.png"
         },
         "url": "https://example.com/partners/goodness"
       },
       {
         "image": {
           "id": "client-mor",
-          "file": "/images/clients/mor.webp"
+          "file": "/images/clients/dark/mor.png"
         },
         "url": "https://example.com/partners/mor"
       },
       {
         "image": {
           "id": "client-sometimes",
-          "file": "/images/clients/sometimes.webp"
+          "file": "/images/clients/dark/sometimes.png"
         },
         "url": "https://example.com/partners/sometimes"
       },
       {
         "image": {
           "id": "client-lowaura",
-          "file": "/images/clients/lowaura.webp"
+          "file": "/images/clients/dark/lowaura.png"
         },
         "url": "https://example.com/partners/lowaura"
       },
       {
         "image": {
           "id": "client-libreri",
-          "file": "/images/clients/libreri.webp"
+          "file": "/images/clients/dark/libreri.png"
         },
         "url": "https://example.com/partners/libreri"
       },
       {
         "image": {
           "id": "client-alibu",
-          "file": "/images/clients/alibu.webp"
+          "file": "/images/clients/dark/alibu.png"
         },
         "url": "https://example.com/partners/alibu"
       },
       {
         "image": {
           "id": "client-blanca",
-          "file": "/images/clients/blanca.webp"
+          "file": "/images/clients/dark/blanca.png"
         },
         "url": "https://example.com/partners/blanca"
       }
