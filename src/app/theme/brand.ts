@@ -175,8 +175,12 @@ export function brandSurfaces({ primary, secondary }: BrandColors) {
    * A wash is the ground with a little of the tint mixed in, not the tint itself: mixing
    * toward the ground keeps mint cool and rose warm and still readable as two different
    * washes, where darkening the light tokens directly collapsed both into the same grey.
+   *
+   * 24 % after comparing 16 / 24 / 32 % side by side on the reviews band: at 16 % the band
+   * stopped reading as its own stripe, which is the job it does in the light theme, and at
+   * 32 % it started competing with the cards laid on it.
    */
-  const wash = (tint: string) => alpha(tint, 0.16);
+  const wash = (tint: string) => alpha(tint, 0.24);
 
   return {
     /** Section wash, one step above the page ground (bg-alt). */

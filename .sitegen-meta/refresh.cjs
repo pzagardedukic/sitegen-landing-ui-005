@@ -13071,7 +13071,7 @@ var init_static2 = __esm({
     init_website();
     landingStatic = createLandingStatic({
       website: website_default,
-      basePath: "/sitegen-landing-ui-005"
+      basePath: ""
     });
     ({
       BASE_PATH,
@@ -45943,7 +45943,7 @@ function footerPalette() {
 function brandSurfaces({ primary, secondary }) {
   const ground = darkGround(primary);
   const bgAlt = darken(primary, 0.88);
-  const wash = (tint) => alpha(tint, 0.16);
+  const wash = (tint) => alpha(tint, 0.24);
   return {
     /** Section wash, one step above the page ground (bg-alt). */
     bgAlt,
