@@ -198,6 +198,23 @@ lokalno z `NEXT_PUBLIC_BASE_PATH` in `NEXT_PUBLIC_SITE_URL`, kot pri `ui-004`). 
 v živo pri 1440 in 390 px: podlaga `rgb(12, 9, 6)`, besedilo `rgb(249, 247, 243)`, brez
 neuspelih zahtev.
 
+### Popravki po prvem krogu (23. 9. 2026, popoldne)
+
+- **Znamčna barva se dvigne toliko, kolikor je treba.** Fiksni dvig za 12 % je bil fitan na
+  Lumierino zlato; fixture  je pokazal, da pri temnejši znamki (#6E5A3C)
+  povezave padejo na 4,07:1 in oznake na 3,95:1.  zdaj začne pri 12 % (to
+  je vrednost iz Figme) in dviguje naprej do 4,5:1 proti podlagi; napis na gumbu izbere med
+  strankino barvo besedila in barvo besedila strani tisto, ki drži.
+- **Senca spustnega menija** je bila zapisana kot barva besedila pri 8 % — v temni temi sij
+  namesto sence. Zdaj je črna pri 55 %.
+- **** je logotip obrnil samo čez fotografijo. V temni temi je tudi pomaknjena
+  glava temna, zato je logotip obrnjen v obeh stanjih.
+- **Dva nova fixtura**:  in . Oba gresta skozi ;
+  edini zadetek je zahteva Googlovih zemljevidov na , ki je znana že iz .
+
+Pregledano tudi na 390 px: glava kot stekleni obroček nad fotografijo, predal z menijem
+temen z zlato aktivno postavko, gumb v banneru temno besedilo na beli ploskvi.
+
 ## Kaj ostaja
 
 - `theme.id` temne različice v čarovniku `sitegen_v2` še ni dodeljen.
