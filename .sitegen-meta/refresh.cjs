@@ -13071,7 +13071,7 @@ var init_static2 = __esm({
     init_website();
     landingStatic = createLandingStatic({
       website: website_default,
-      basePath: ""
+      basePath: "/sitegen-landing-ui-005"
     });
     ({
       BASE_PATH,

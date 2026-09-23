@@ -137,3 +137,71 @@ temnem). Harness zahteva čisto delovno drevo, ker med tekom prepisuje `website.
 
 Med fixture-i ni takega, ki bi preizkusil **temno strankino barvo besedila**; za temno temo
 ga je treba dodati.
+
+## Izid (23. 9. 2026)
+
+**Faza 1 — paleta.** Dark variant v Figmi ni bilo, zato so narisane: nova stran
+**`dark — Lumiera`** v datoteki Lumiere ima frame s tokeni (12 vrednosti, vsaka z imenom,
+hexom in razmerjem kontrasta) in štiri sekcije, ki pokrijejo vse vrste ploskev — banner s
+fotografijo in scrimom, sekcija z izmenično podlago, mreža kartic z mint in rose washem ter
+noga.
+
+Paleta, vsa izpeljana iz istih treh strankinih barv:
+
+| token | vrednost | izpeljava |
+|---|---|---|
+| `background.default` | `#0D0A06` | `darken(primary, 0.93)` |
+| `surfaces.bgAlt` | `#16110B` | `darken(primary, 0.88)` |
+| `background.paper` | `#1B150E` | `darken(primary, 0.85)` |
+| `surfaces.surface` | `#201A10` | `darken(primary, 0.82)` |
+| `surfaces.placeholder` | `#362B1B` | `darken(primary, 0.70)` |
+| `surfaces.border` | `#7A6445` | `lighten(darken(primary, 0.82), 0.34)` |
+| `surfaces.mint` | mint 16 % čez podlago | `alpha(LUMIERA.mint, 0.16)` |
+| `surfaces.rose` | secondary 16 % čez podlago | `alpha(secondary, 0.16)` |
+| `text.primary` | `#FAF7F3` | `lighten(primary, 0.93)` |
+| `text.secondary` | `#AEB6BB` | `lighten(slate, 0.55)` |
+| `primary.main` | `#BD9C6E` | `lighten(primary, 0.12)` |
+| `footer.background` | `#151A1D` | `darken(slate, 0.72)` |
+
+Obroba ni fiksni token kot v svetli temi: je obris gumbov in čipov (37 rab), zato je
+izračunana tako, da doseže 3:1 proti **najsvetlejši** ploskvi, na kateri stoji, ne le proti
+podlagi strani. Mint in rose sta primes čez podlago in ne potemnjena svetla tokena — ta sta
+se oba sesedla v isto sivo.
+
+**Faza 2 — koda.** Delo je v `colors.ts`, `brand.ts` in `theme.ts` (`mode: "dark"`), plus
+`globals.css` (`color-scheme`, panel za obnovitev jezika). Nova `brandBase()` drži primary,
+secondary, background in text na enem mestu, ker ju potrebujeta obe poti gradnje teme;
+`createPreviewTheme()` strankinih barv ne zapisuje več neposredno na paleto — njena temna
+barva besedila bi na temni strani izginila, zato je rezervirana za besedilo **na** njenih
+svetlih ploskvah (gumb, glava).
+
+Tri komponente so na beli ploskvi brale barvo besedila strani (`ArrowButton` in
+`CircleButton`, ton „white“, ter namig za pomik v `HomeSection`). Zdaj berejo
+`primary.contrastText`; v svetli temi je to ista vrednost, zato je popravek prenosljiv v
+`ui-004`.
+
+**Slike.** Logotipi strank so dobavljeni kot temna risba na beli podlagi in so bili vrsta
+belih tablic; dodane so obrnjene kopije s prosojnim ozadjem
+(`public/images/clients/dark/*.png`), demo podatki kažejo nanje. Trije certifikati v „Zakaj
+nas“ so imeli belino v naslovu `placehold.co` — zdaj so temni. Portreti ekipe (beli izrezi)
+na temni podlagi delujejo in so ostali nespremenjeni. `image-fallback.webp` ni nikjer v
+uporabi, zato ni spremenjen.
+
+**Faza 3 — preverjanje.** 15 poti × 1440 in 390 px: nikjer vodoravnega drsenja, nikjer
+napake v konzoli. Strojni pregled kontrasta čez vse vidno besedilo (barva besedila proti
+dejanski podlagi, meja 4,5 oziroma 3 za velike naslove) — **brez padcev na katerikoli
+strani**.
+
+**Faza 4 — objava.** Demo stran teče na
+**https://pzagardedukic.github.io/sitegen-landing-ui-005/** (veja `gh-pages`, gradnja
+lokalno z `NEXT_PUBLIC_BASE_PATH` in `NEXT_PUBLIC_SITE_URL`, kot pri `ui-004`). Preverjeno
+v živo pri 1440 in 390 px: podlaga `rgb(12, 9, 6)`, besedilo `rgb(249, 247, 243)`, brez
+neuspelih zahtev.
+
+## Kaj ostaja
+
+- `theme.id` temne različice v čarovniku `sitegen_v2` še ni dodeljen.
+- Fixture za **temno strankino barvo besedila** še ni dodan; paleta je za ta primer
+  zasnovana (besedilo strani se ne jemlje iz `text`), a to še ni preizkušeno s `test:variants`.
+- Popravek treh komponent (`primary.contrastText` na beli ploskvi) je smiselno prenesti v
+  `ui-004`, kjer je brez vizualnega učinka.
