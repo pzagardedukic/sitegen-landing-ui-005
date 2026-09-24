@@ -55772,8 +55772,14 @@ init_runtime2();
 // src/page-content/components/section/video/VideoThumbnail.tsx
 var import_react47 = __toESM(require_react(), 1);
 var import_jsx_runtime201 = __toESM(require_jsx_runtime(), 1);
+function youTubeStill(url) {
+  const id = extractYouTubeId(url);
+  return id ? `https://img.youtube.com/vi/${id}/hqdefault.jpg` : null;
+}
 function VideoThumbnail({ videoUrl }) {
-  const [thumb, setThumb] = (0, import_react47.useState)(null);
+  const [thumb, setThumb] = (0, import_react47.useState)(
+    () => youTubeStill(videoUrl)
+  );
   (0, import_react47.useEffect)(() => {
     let mounted = true;
     (async () => {
